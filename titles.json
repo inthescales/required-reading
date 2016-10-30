@@ -1,0 +1,19 @@
+{
+	"formats": [
+		"<title:field>",
+		"<title:nonfield>",
+		"<title:field>: <title:nonfield>",
+		"<title:nonfield>: <title:field>"
+	],
+	"field": [
+		"<field:name>",
+		"<text:on> <field:name>"
+	],
+	"nonfield": [
+		"<field:object>!",
+		"<field:object> and <field:object>",
+		"<field:object>, <field:object>, and <field:object>",
+		"<field:object#1> <text:lister> <field:object#1>"
+	]
+
+}

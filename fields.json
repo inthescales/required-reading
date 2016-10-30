@@ -1,0 +1,49 @@
+{
+
+	"fields": [{
+		"name": ["biology"],
+		"adj": ["biological"],
+		"prefix": ["bio"],
+		"object": ["animals", "plants", "bacteria"]
+	}, {
+		"name": ["geology"],
+		"adj": ["geological"],
+		"prefix": ["geo"],
+		"object": ["rocks", "stones", "minerals"]
+	}, {
+		"name": ["theology"],
+		"adj": ["theological"],
+		"object": ["God", "Goddess", "gods", "goddesses", "dieties", "divinity", "the soul", "the afterlife", "demons", "devils", "spirits", "ancestors"]
+	}],
+	"modifiers": [{
+		"adjective": ["comparative"]
+	}, {
+		"adjective": ["historical"]
+	}, {
+		"adjective": ["critical"]
+	}, {
+		"adjective": ["feminist"],
+		"objects": ["women", "gender", "sex"]
+	}, {
+		"adjective": ["dialectical"]
+	}, {
+		"adjective": ["modern", "contemporary"],
+		"objects": ["technology"]
+	}, {
+		"adjective": ["ancient"]
+	}, {
+		"adjective": ["forbidden"],
+		"objects": ["taboo", "law", "morality", "ethics"]
+	}, {
+		"adjective": ["biblical"],
+		"objects": ["God", "Jesus", "faith", "Christianity"]
+	}, {
+		"adjective": ["speculative"],
+		"objects": ["technology", "parallell worlds"]
+	}, {
+		"adjective": ["business"],
+		"objects": ["finance", "the economy", "development", "profit"]
+	}, {
+		"adjective": ["postmodern"]
+	}]
+}

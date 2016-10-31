@@ -23,26 +23,26 @@
 		"adjective": ["critical"]
 	}, {
 		"adjective": ["feminist"],
-		"objects": ["women", "gender", "sex"]
+		"object": ["women", "gender", "sex"]
 	}, {
 		"adjective": ["dialectical"]
 	}, {
 		"adjective": ["modern", "contemporary"],
-		"objects": ["technology"]
+		"object": ["technology", "culture", "globalization"]
 	}, {
 		"adjective": ["ancient"]
 	}, {
 		"adjective": ["forbidden"],
-		"objects": ["taboo", "law", "morality", "ethics"]
+		"object": ["taboo", "law", "morality", "ethics"]
 	}, {
 		"adjective": ["biblical"],
-		"objects": ["God", "Jesus", "faith", "Christianity"]
+		"object": ["God", "Jesus", "faith", "Christianity", "Satan", "The Second Coming"]
 	}, {
 		"adjective": ["speculative"],
-		"objects": ["technology", "parallell worlds"]
+		"object": ["technology", "parallel worlds", "the multiverse", "the future"]
 	}, {
 		"adjective": ["business"],
-		"objects": ["finance", "the economy", "development", "profit"]
+		"object": ["finance", "the economy", "development", "profit"]
 	}, {
 		"adjective": ["postmodern"]
 	}]

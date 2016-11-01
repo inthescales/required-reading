@@ -4,18 +4,23 @@
 		"name": ["biology"],
 		"adj": ["biological"],
 		"prefix": ["bio"],
-		"object": ["animals", "plants", "bacteria"]
+		"object": ["animals", "plants", "bacteria"],
+        "keyword": ["life", "living", "alive"]
 	}, {
 		"name": ["geology"],
 		"adj": ["geological"],
 		"prefix": ["geo"],
-		"object": ["rocks", "stones", "minerals"]
+		"object": ["rocks", "stones", "minerals"],
+        "keyword": ["stone", "earth", "rock", "soil", "mountain"]
 	}, {
 		"name": ["theology"],
 		"adj": ["theological"],
-		"object": ["God", "Goddess", "gods", "goddesses", "dieties", "divinity", "the soul", "the afterlife", "demons", "devils", "spirits", "ancestors"]
+		"object": ["God", "Goddess", "gods", "goddesses", "dieties", "divinity", "the soul", "the afterlife", "demons", "devils", "spirits", "ancestors"],
+        "keyword": ["soul", "god", "spirit", "divine", "divinity", "spiritual"]
 	}],
 	"modifiers": [{
+		"adjective": ["applied", "practical"]
+	}, {
 		"adjective": ["comparative"]
 	}, {
 		"adjective": ["historical"]
@@ -25,7 +30,8 @@
 		"adjective": ["feminist"],
 		"object": ["women", "gender", "sex"]
 	}, {
-		"adjective": ["dialectical"]
+		"adjective": ["dialectical"],
+        "object": ["argument", "reason", "debate", "logic"]
 	}, {
 		"adjective": ["modern", "contemporary"],
 		"object": ["technology", "culture", "globalization"]

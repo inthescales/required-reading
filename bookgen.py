@@ -41,8 +41,48 @@ def get_field():
         
     return field
     
+def resolve_chance(node):
+    chances = re.findall(r'\[.+?(?:\|\d\d)?(?:#\d+)?\]', node)
+    
+    handled_groups = [] #skip groups that have already been resolved
+    
+    if len(chances) > 0:
+        for chance in chances:
+            inner = chance[1:-1]
+            if "#" in chance:
+                split = inner.split("#")
+                inner = split[0]
+                group = split[1]
+                if group in handled_groups:
+                    continue
+            else:
+                group = None
+                
+            if "|" in chance:
+                split = inner.split("|")
+                inner = split[0]
+                probability_string = split[1]
+                probability = float(split[1]) / 100
+            else:
+                probability_string = None
+                probability = None
+            
+            if probability and random.random() < probability:
+                replacement = inner
+            else:
+                replacement = ""
+            
+            if group is None:
+                node = node.replace(chance, replacement, 1)
+            else:
+                node = re.sub(r'\[.+?(?:\|\d\d)?(?:#' + group + ')?\]', replacement, node)
+                handled_groups.append(group)
+
+    return node
+    
 def expand(node, data):
-    expansions = list()    
+    expansions = list()
+    node = resolve_chance(node)
     replacethese = re.findall(r'<.+?>', node)
     
     if len(replacethese) > 0:

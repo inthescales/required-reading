@@ -1,6 +1,6 @@
 {
 	"on": ["on", "regarding", "relating to", "concerning", "about"],
-    "complete": ["complete", "authoritative", "comprehensive", "big"],
+	"complete": ["complete", "authoritative", "comprehensive", "big"],
 	"questions": ["questions", "inquiries", "investigations"],
 	"clarifying": ["clarifying", "cracking", "understanding", "revealing", "simplifying", "breaking down"],
 	"understanding": ["understanding", "learning", "navigating", "mastering", "comprehending"],
@@ -11,5 +11,11 @@
 	"foundation": ["foundation", "fundamentals", "basics"],
 	"simple": ["easy", "simple", "fundamental", "elementary", "basic"],
 	"advanced": ["advanced", "complex"],
-	"lister": ["by", "after"]
+	"lister": ["upon", "after"],
+	"period": ["time", "era", "age", "epoch", "period", "world"],
+	"owns": ["rules", "rocks", "is fun", "is <text:good>"],
+	"good": ["fun", "great", "amazing", "incredible"],
+	"unbelievable": ["incredible", "amazing", "unbelievable", "astounding"],
+    "adjective": ["<text:good>", "<text:unbelievable>"],
+    "how_to": ["How To"]
 }

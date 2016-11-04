@@ -1,19 +1,45 @@
 {
 	"formats": [
 		"<title:field>",
-		"<title:nonfield>",
-		"<title:field>: <title:nonfield>",
-		"<title:nonfield>: <title:field>"
+		"<title:subject>",
+		"<title:field>: <title:subject>",
+		"<title:subject>: <title:field>",
+        "<title:something> <text:owns>",
+        "<title:something> is <text:good>",
+        "<title:something> is <text:unbelievable>",
+		"<title:action>"
 	],
 	"field": [
 		"<field:name>",
 		"<text:on> <field:name>"
 	],
-	"nonfield": [
-		"<field:object>!",
-		"<field:object!> and <field:object!>",
-		"<field:object!>, <field:object!>, and <field:object!>",
-		"<field:object#1> <text:lister> <field:object#1>"
+	"subject": [
+		"<field:subject>!",
+		"<field:subject!> and <field:subject!>",
+		"<field:subject!>, <field:subject!>, and <field:subject!>",
+		"<field:subject#1> <text:lister> <field:subject#1>"
+	],
+	"action": [
+		"<text:how_to> <field:verb> <field:subject>",
+		"[<text:on> |50]<field:practice> <field:subject>"
+	],
+	"something": [
+		"<field:name>",
+		"<field:practice> <field:object>",
+		"<field:gerund> <field:object>"
+	],
+    "no_modifier": [
+        "<text:unbelievable> <field:name>"
+    ],
+	"modifier": [
+		"<field:subject> and <modifier:subject>",
+		"<modifier:subject> and <field:subject>"
+	],
+	"modifier_action": [
+		"<field:gerund> <field:object>, <modifier:gerund> <modifier:object>",
+		"<modifier:gerund> <modifier:object>, <field:gerund> <field:object>",
+		"<modifier:gerund> <modifier:object> with <field:subject>",
+		"<field:gerund> <field:object> with <modifier:subject>"
 	]
 
 }

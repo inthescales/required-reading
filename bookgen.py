@@ -5,6 +5,7 @@ import sys
 
 data = {}
 field = None
+modifier = None
 failed = False
 
 with open('titles.json') as data_file:
@@ -22,24 +23,46 @@ if data is None:
     
 def generate_title():
     global field
-    title = random.choice(get_value("title:formats"))
     field = get_field()
+    print "field = " + field["name"][0]
+    title_choices = get_titles()
+    title = random.choice(title_choices)
     
     data = {"taken": {}}
     
     return random.choice( expand(title, data) )
     
+def get_titles():
+    global field, modifier
+    titles = get_value("title:formats")
+    
+    if "title" in field:
+        titles.extend(get_value("field:title"))
+
+    if modifier:
+        titles.extend(get_value("fields:modifier_titles"))
+        if "title" in modifier:
+            titles.extend(get_value("modifier:title"))
+    else:
+        titles.extend(get_value("title:no_modifier"))
+
+    return titles
+    
+    
 def get_field():
+    global modifier
     field = random.choice(get_value("fields:fields"))
     if random.random() <= 0.6:
-        modifier = random.choice(get_value("fields:modifiers"))
+        modifier = get_modifier()
         field["name"] = [random.choice(modifier["adjective"]) + " " + random.choice(field["name"])]
-        if "object" in field and "object" in modifier:
-            field["object"].extend(modifier["object"])
     else:
         field["name"] = [random.choice(field["name"])] # choose one name for the field
         
     return field
+    
+def get_modifier():
+    modifier = random.choice(get_value("fields:modifiers"))
+    return modifier
     
 def resolve_chance(node):
     chances = re.findall(r'\[.+?(?:\|\d\d)?(?:#\d+)?\]', node)
@@ -126,7 +149,7 @@ def expand(node, data):
     return expansions
 
 def get_value(node):
-    global field
+    global field, failed, modifier
     node = node.split("#")[0]
     tokens = node.split(":")
     dict = None
@@ -139,22 +162,32 @@ def get_value(node):
         dict = data["text"]
     elif tokens[0] == "field":
         dict = field
+    elif tokens[0] == "modifier":
+        print modifier
+        dict = modifier
     else:
-        return "ERROR"
         failed = True
+        return ["ERROR"]
         
     cur = dict
     for token in tokens[1:]:
+
         if token not in cur:
-            return ""
             failed = True
+            print "DIDN'T FIND " + token + " IN " + node
+            print cur
+            return ["ERROR"]
         else:
             cur = cur[token]
         
     return cur
-        
-print generate_title()
 
-if failed:
-    print "ERROR"
+generated = None
+while generated == None or failed:
+    failed = False
+    field = None
+    modifier = None
+    print "GENERATING"
+    generated = generate_title()
 
+print generated

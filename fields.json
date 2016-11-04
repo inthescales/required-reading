@@ -4,22 +4,40 @@
 		"name": ["biology"],
 		"adj": ["biological"],
 		"prefix": ["bio"],
-		"object": ["animals", "plants", "bacteria"],
-        "keyword": ["life", "living", "alive"]
+		"subject": ["animals", "plants", "bacteria"],
+		"keyword": ["life", "living", "alive"],
+		"verb": ["identify"],
+		"gerund": ["identifying"],
+		"practice": ["the identification of"],
+		"object": ["living things", "lifeforms", "organisms", "life processes"]
 	}, {
 		"name": ["geology"],
 		"adj": ["geological"],
 		"prefix": ["geo"],
-		"object": ["rocks", "stones", "minerals"],
-        "keyword": ["stone", "earth", "rock", "soil", "mountain"]
+		"subject": ["rocks", "stones", "minerals"],
+		"keyword": ["stone", "earth", "rock", "soil", "mountain"],
+		"verb": ["identify"],
+		"gerund": ["identifying"],
+		"practice": ["the identification of"],
+		"object": ["rocks", "minerals", "strata", "terrain"]
 	}, {
 		"name": ["theology"],
 		"adj": ["theological"],
-		"object": ["God", "Goddess", "gods", "goddesses", "dieties", "divinity", "the soul", "the afterlife", "demons", "devils", "spirits", "ancestors"],
-        "keyword": ["soul", "god", "spirit", "divine", "divinity", "spiritual"]
+		"subject": ["God", "Goddess", "gods", "goddesses", "deities", "divinity", "the soul", "the afterlife", "demons", "devils", "spirits", "ancestors"],
+		"keyword": ["soul", "god", "spirit", "divine", "divinity", "spiritual"],
+		"verb": ["understand", "commune with"],
+		"gerund": ["understanding", "communing with"],
+		"practice": ["understanding of", "communion with"],
+		"object": ["the divine", "God", "the spiritual self", "the spirit", "the soul", "divinity"]
 	}],
+	"modifier_titles": [
+		"<title:field>: <title:modifier>",
+		"<title:modifier>: <title:field>",
+		"<title:modifier_action>"
+	],
 	"modifiers": [{
-		"adjective": ["applied", "practical"]
+		"adjective": ["applied", "practical"],
+		"subject": ["praxis", "everyday life", "practice", "application"]
 	}, {
 		"adjective": ["comparative"]
 	}, {
@@ -28,28 +46,36 @@
 		"adjective": ["critical"]
 	}, {
 		"adjective": ["feminist"],
-		"object": ["women", "gender", "sex"]
+		"subject": ["women", "gender", "sex"]
 	}, {
 		"adjective": ["dialectical"],
-        "object": ["argument", "reason", "debate", "logic"]
+		"subject": ["argument", "reason", "debate", "logic"]
 	}, {
 		"adjective": ["modern", "contemporary"],
-		"object": ["technology", "culture", "globalization"]
+		"subject": ["technology", "culture", "globalization"]
 	}, {
 		"adjective": ["ancient"]
 	}, {
 		"adjective": ["forbidden"],
-		"object": ["taboo", "law", "morality", "ethics"]
+		"subject": ["taboo", "law", "morality", "ethics"]
 	}, {
 		"adjective": ["biblical"],
-		"object": ["God", "Jesus", "faith", "Christianity", "Satan", "The Second Coming"]
+		"subject": ["God", "Jesus", "faith", "Christianity", "Satan", "The Second Coming"],
+		"title": ["<field:subject> in the <text:period> of <modifier:subject>", "Holy <field:subject>!"]
 	}, {
 		"adjective": ["speculative"],
-		"object": ["technology", "parallel worlds", "the multiverse", "the future"]
+		"subject": ["technology", "parallel worlds", "the multiverse", "the future"]
 	}, {
 		"adjective": ["business"],
-		"object": ["finance", "the economy", "development", "profit"]
+		"subject": ["finance", "the economy", "development", "profit"],
+		"verb": ["make"],
+		"gerund": ["making"],
+		"practice": ["making"],
+        "object": ["money", "a profit"]
 	}, {
 		"adjective": ["postmodern"]
+	}, {
+		"adjective": ["marxist", "revolutionary"],
+		"subject": ["Marx", "Lenin", "Mao", "the revolution", "the proletariat", "the bourgoisie", "class", "communism", "socialism"]
 	}]
 }

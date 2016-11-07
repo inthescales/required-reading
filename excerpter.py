@@ -44,47 +44,71 @@ def find(keywords, file):
             for j in range(0,5):
                 if i-j > 0 and i-j+5 < len(words):
                     term = words[i-j:i-j+5]
-                    if is_ok(term):
-                        finds[word].extend(term)
-                        print "ACCEPTED: " + " ".join(term)
-                    else:
-                        print "REJECTED: " + " ".join(term)
+                    cleaned = clean(term)
+                    if cleaned:
+                        #print cleaned
+                        finds[word].extend(cleaned)
 
-def clean(term)
-
-    for i in range(0, len(term)-1):
+def clean(term):
+   
+    print term
     
-        term[i] = term[i].replace("\"", "")
+    is_last = True
+    is_first = False
+    
+    def trim_first(word):
+        return word[1:]
+    
+    def trim_last(word):
+        return word[:-1]
         
+    def no_marks(word):
+        return re.match('\w+', word)
+        
+    def non_breaking_punc(char):
+        return char == ","
+        
+    def breaking_punc(char):
+        return char == "\"" or char == "." or char == ";" or char == ":"
+
+    for i in reversed(range(0, len(term))):
+            
         word = term[i]
+        is_first = i == 0
         is_last = i == len(term)-1
-        last_char = word[len(word)-1]
+        length = len(term)
         
-        if is_last:
-            if last_char == "." or last_char == ":" or last_char == "," or last_char == ";":
-                term[i] = word[0:len(word)-2]
-        
-        if last_char == "." or last_char == ":":
-            if not is_last:
-                return False
+        # Clean initial punctuation
+        first_char = word[0]
+        if first_char == "\"":
+            if not is_first:
+                term = term[:i]
             else:
-                term[i] = word[0:len(word)-2]
-
-def is_ok(term):
-
-    first = term[0]
-    first_tags = tag(first)[0]
-    print first_tags
-    if ('CC' in first_tags and 'and' not in first_tags):
-        return False
+                term[i] = word[1:]
+            continue
+        
+        # Clean final punctuation, break if necesssary
+        for j in reversed(range(0, len(word))):
+            cur = word[j]
+            if non_breaking_punc(cur):
+                term[i] = word = word[:-1]
+            elif breaking_punc(cur):
+                term[i] = word = word[:-1]
+                term = term[:i+1]
+                is_last = i == len(term)-1
                 
-    last = term[len(term)-1]
-    last_tags = tag(last)[0]
-    print last_tags
-    if 'CC' in last_tags or 'IN' in last_tags or 'DT' in last_tags or 'PRP$' in last_tags or 'WDT' in last_tags or 'WP$' in last_tags or 'MD' in last_tags or 'TO' in last_tags or 'WRB' in last_tags or 'VB' in last_tags or 'RB' in last_tags: #MD: modal
-        return False
-
-    return True
+        # Check category
+        last_tags = tag(word)[0]
+        if is_last and ('CC' in last_tags or 'IN' in last_tags or 'DT' in last_tags or 'PRP$' in last_tags or 'WDT' in last_tags or 'WP$' in last_tags or 'MD' in last_tags or 'TO' in last_tags or 'WRB' in last_tags or 'VB' in last_tags): #or 'RB' in last_tags):
+            term = term[:i]
+            continue
+    
+    print term
+    
+    if len(term) >= 3:
+        return term
+    else:
+        return None
 
 #finds = find(["stone", "earth"], 'corpus/bible.txt')
 finds = find(["stone", "earth"], 'corpus/marx_critique.txt')

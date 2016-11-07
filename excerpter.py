@@ -47,11 +47,13 @@ def find(keywords, file):
                     cleaned = clean(term)
                     if cleaned:
                         #print cleaned
-                        finds[word].extend(cleaned)
+                        finds[word].append(" ".join(cleaned))
+                        
+    return finds
 
 def clean(term):
    
-    print term
+    #print term
     
     is_last = True
     is_first = False
@@ -98,12 +100,15 @@ def clean(term):
                 is_last = i == len(term)-1
                 
         # Check category
-        last_tags = tag(word)[0]
-        if is_last and ('CC' in last_tags or 'IN' in last_tags or 'DT' in last_tags or 'PRP$' in last_tags or 'WDT' in last_tags or 'WP$' in last_tags or 'MD' in last_tags or 'TO' in last_tags or 'WRB' in last_tags or 'VB' in last_tags): #or 'RB' in last_tags):
+        tags = tag(word)[0]
+        if is_last and ('CC' in tags or 'IN' in tags or 'DT' in tags or 'PRP$' in tags or 'WDT' in tags or 'WP$' in tags or 'MD' in tags or 'TO' in tags or 'WRB' in tags or 'VB' in tags or 'VBZ' in tags or 'VBP' in tags or 'VBD' in tags or 'RB' in tags):
             term = term[:i]
             continue
+            
+        if is_first and ('VB' in tags or 'VBZ' in tags or 'VBP' in tags or 'VBD' in tags):
+            return None
     
-    print term
+    #print term
     
     if len(term) >= 3:
         return term

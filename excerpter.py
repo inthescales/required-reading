@@ -36,7 +36,7 @@ def find(keywords, file):
         
         word = words[i].lower()
         
-        if word in keywords:
+        if word and word in keywords:
             
             if word not in finds:
                 finds[word] = []
@@ -71,7 +71,7 @@ def clean(term):
         return char == ","
         
     def breaking_punc(char):
-        return char == "\"" or char == "." or char == ";" or char == ":"
+        return char == "\"" or char == "(" or char == ")" or char == "." or char == ";" or char == ":" or char == "!" or char == "?"
 
     for i in reversed(range(0, len(term))):
             
@@ -82,7 +82,7 @@ def clean(term):
         
         # Clean initial punctuation
         first_char = word[0]
-        if first_char == "\"":
+        if first_char == "\"" or first_char == "(":
             if not is_first:
                 term = term[:i]
             else:
@@ -101,7 +101,7 @@ def clean(term):
                 
         # Check category
         tags = tag(word)[0]
-        if is_last and ('CC' in tags or 'IN' in tags or 'DT' in tags or 'PRP$' in tags or 'WDT' in tags or 'WP$' in tags or 'MD' in tags or 'TO' in tags or 'WRB' in tags or 'VB' in tags or 'VBZ' in tags or 'VBP' in tags or 'VBD' in tags or 'RB' in tags):
+        if is_last and ('CC' in tags or 'IN' in tags or 'DT' in tags or 'PRP' in tags or 'PRP$' in tags or 'WDT' in tags or 'WP$' in tags or 'MD' in tags or 'TO' in tags or 'WRB' in tags or 'VB' in tags or 'VBZ' in tags or 'VBP' in tags or 'VBD' in tags or 'RB' in tags):
             term = term[:i]
             continue
             
@@ -115,6 +115,14 @@ def clean(term):
     else:
         return None
 
-#finds = find(["stone", "earth"], 'corpus/bible.txt')
-finds = find(["stone", "earth"], 'corpus/marx_critique.txt')
-print finds
+corpora = ['austen-emma.txt', 'bible.txt', 'blake-poems.txt', 'carroll-alice.txt', 'darwin-origin.txt', 'homer-odyssey.txt', 'malleus.txt', 'marx-critique.txt', 'milton-paradise.txt', 'plato-republic.txt', 'shakespeare-hamlet.txt']
+
+finds = {}
+for corpus in corpora:
+    #print corpus
+    terms = find(keywords, 'corpus/' + corpus)
+    finds[corpus] = terms
+    file = open('excerpts/' + corpus, 'w')
+    dump = json.dumps(finds)
+    file.write(dump)
+    file.close()

@@ -1,7 +1,12 @@
 {
 	"formats": [
-		"<title:field>",
-		"<title:subject>",
+		"<excerpt>",
+        "<excerpt>: <title:subject>",
+        "<excerpt>: <title:something>",
+        "<excerpt>",
+        "<excerpt>: <title:subject>",
+        "<excerpt>: <title:something>",
+        "<title:subject>",
 		"<title:field>: <title:subject>",
 		"<title:subject>: <title:field>",
         "<title:something> <text:owns>",

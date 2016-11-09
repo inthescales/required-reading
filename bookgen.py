@@ -4,6 +4,7 @@ import re
 import sys
 
 data = {}
+excerpts = {}
 field = None
 modifier = None
 failed = False
@@ -16,6 +17,10 @@ with open('fields.json') as data_file:
 
 with open('texts.json') as data_file:
     data["text"] = json.load(data_file)
+    
+# make this read all the different files
+with open('excerpts.json') as data_file:
+    excerpts = json.load(data_file)
 
 if data is None:
     print "Error: missing data"
@@ -25,20 +30,22 @@ def generate_title():
     global field
     field = get_field()
     print "field = " + field["name"][0]
+    
     title_choices = get_titles()
     title = random.choice(title_choices)
     
-    data = {"taken": {}}
-    
-    return random.choice( expand(title, data) )
+    expand_data = {"taken": {}}
+    return random.choice( expand(title, expand_data) )
     
 def get_titles():
     global field, modifier
     titles = get_value("title:formats")
     
+    return titles
+    
     if "title" in field:
         titles.extend(get_value("field:title"))
-
+        
     if modifier:
         titles.extend(get_value("fields:modifier_titles"))
         if "title" in modifier:
@@ -48,6 +55,28 @@ def get_titles():
 
     return titles
     
+def get_keywords():
+    global field, modifier
+    
+    keywords = get_value("field:keyword")
+    
+    if modifier and "keyword" in modifier:
+        keywords.extend(get_value("modifier:keyword"))
+    
+    return keywords
+    
+def get_sources():
+    global field, modifier
+    
+    sources = get_value("fields:source")
+    
+    if "source" in field:
+        sources.extend(get_value("field:source"))
+    
+    if modifier and "source" in modifier:
+        sources.extend(get_value("modifier:source"))
+    
+    return sources
     
 def get_field():
     global modifier
@@ -165,6 +194,12 @@ def get_value(node):
     elif tokens[0] == "modifier":
         print modifier
         dict = modifier
+    elif tokens[0] == "excerpt":
+        keyword = random.choice(get_keywords())
+        source = random.choice(get_sources())
+        excerpt = random.choice(excerpts[source][keyword])
+        return [excerpt]
+        
     else:
         failed = True
         return ["ERROR"]

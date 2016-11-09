@@ -28,7 +28,8 @@
 		"verb": ["understand", "commune with"],
 		"gerund": ["understanding", "communing with"],
 		"practice": ["understanding of", "communion with"],
-		"object": ["the divine", "God", "the spiritual self", "the spirit", "the soul", "divinity"]
+		"object": ["the divine", "God", "the spiritual self", "the spirit", "the soul", "divinity"],
+        "source": ["corpus/bible.txt"]
 	}],
 	"modifier_titles": [
 		"<title:field>: <title:modifier>",
@@ -61,7 +62,8 @@
 	}, {
 		"adjective": ["biblical"],
 		"subject": ["God", "Jesus", "faith", "Christianity", "Satan", "The Second Coming"],
-		"title": ["<field:subject> in the <text:period> of <modifier:subject>", "Holy <field:subject>!"]
+		"title": ["<field:subject> in the <text:period> of <modifier:subject>", "Holy <field:subject>!"],
+        "source": ["corpus/bible.txt","corpus/bible.txt","corpus/bible.txt","corpus/bible.txt","corpus/bible.txt","corpus/bible.txt","corpus/bible.txt","corpus/bible.txt"]
 	}, {
 		"adjective": ["speculative"],
 		"subject": ["technology", "parallel worlds", "the multiverse", "the future"]
@@ -77,5 +79,6 @@
 	}, {
 		"adjective": ["marxist", "revolutionary"],
 		"subject": ["Marx", "Lenin", "Mao", "the revolution", "the proletariat", "the bourgoisie", "class", "communism", "socialism", "the dialectic", "contradiction"]
-	}]
+	}],
+    "source": ["corpus/bible.txt"]
 }

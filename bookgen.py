@@ -2,6 +2,8 @@ import json
 import random
 import re
 import sys
+from os import listdir
+from os.path import isfile, join
 
 data = {}
 excerpts = {}
@@ -17,11 +19,14 @@ with open('fields.json') as data_file:
 
 with open('texts.json') as data_file:
     data["text"] = json.load(data_file)
-    
-# make this read all the different files
-with open('excerpts.json') as data_file:
-    excerpts = json.load(data_file)
 
+path = '.'
+excerpts_path = './excerpts/'
+excerpt_files = [f for f in listdir(excerpts_path) if isfile(join(excerpts_path, f))]
+for file in excerpt_files:
+    with open(excerpts_path + file) as data_file:
+        excerpts[file] = json.load(data_file)
+    
 if data is None:
     print "Error: missing data"
     sys.exit()
@@ -80,7 +85,7 @@ def get_sources():
     
 def get_field():
     global modifier
-    field = random.choice(get_value("fields:fields"))
+    field = dict(random.choice(get_value("fields:fields")))
     if random.random() <= 0.6:
         modifier = get_modifier()
         field["name"] = [random.choice(modifier["adjective"]) + " " + random.choice(field["name"])]
@@ -178,7 +183,7 @@ def expand(node, data):
     return expansions
 
 def get_value(node):
-    global field, failed, modifier
+    global field, failed, modifier, excerpts
     node = node.split("#")[0]
     tokens = node.split(":")
     dict = None
@@ -192,13 +197,19 @@ def get_value(node):
     elif tokens[0] == "field":
         dict = field
     elif tokens[0] == "modifier":
-        print modifier
         dict = modifier
     elif tokens[0] == "excerpt":
         keyword = random.choice(get_keywords())
         source = random.choice(get_sources())
-        excerpt = random.choice(excerpts[source][keyword])
-        return [excerpt]
+        if excerpts and source in excerpts and keyword in excerpts[source]:
+            excerpt = random.choice(excerpts[source][keyword])
+            return [excerpt]
+        else:
+            print "Failed: invalid source or keyword"
+            print source
+            print keyword
+            failed = True
+            return ["ERROR"]
         
     else:
         failed = True

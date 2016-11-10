@@ -115,8 +115,8 @@ def clean(term):
     else:
         return None
 
-corpora = ['austen-emma.txt', 'bible.txt', 'blake-poems.txt', 'carroll-alice.txt', 'darwin-origin.txt', 'homer-odyssey.txt', 'malleus.txt', 'marx-critique.txt', 'milton-paradise.txt', 'plato-republic.txt', 'shakespeare-hamlet.txt']
-
+corpora = ['austen-emma.txt', 'bible.txt', 'blake-poems.txt', 'carroll-alice.txt', 'darwin-origin.txt', 'malleus.txt', 'marx-critique.txt', 'milton-paradise.txt', 'plato-republic.txt', 'shakespeare-hamlet.txt']
+# 'homer-odyssey.txt', 
 finds = {}
 for corpus in corpora:
     #print corpus

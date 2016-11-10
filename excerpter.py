@@ -28,6 +28,7 @@ def find(keywords, file):
     
     with open(file, 'r') as corpus:
         file_data = corpus.read()
+        file_data = file_data.decode("utf-8")
         file_data = prepare_data(file_data)
         
     words = file_data.split(" ")
@@ -115,14 +116,14 @@ def clean(term):
     else:
         return None
 
-corpora = ['austen-emma.txt', 'bible.txt', 'blake-poems.txt', 'carroll-alice.txt', 'darwin-origin.txt', 'malleus.txt', 'marx-critique.txt', 'milton-paradise.txt', 'plato-republic.txt', 'shakespeare-hamlet.txt']
-# 'homer-odyssey.txt', 
+corpora = ['homer-odyssey.txt', 'austen-emma.txt', 'bible.txt', 'blake-poems.txt', 'carroll-alice.txt', 'darwin-origin.txt', 'malleus.txt', 'marx-critique.txt', 'milton-paradise.txt', 'plato-republic.txt', 'shakespeare-hamlet.txt']
+
 finds = {}
 for corpus in corpora:
-    #print corpus
+    print corpus
     terms = find(keywords, 'corpus/' + corpus)
     finds[corpus] = terms
     file = open('excerpts/' + corpus, 'w')
-    dump = json.dumps(finds)
+    dump = json.dumps(finds[corpus])
     file.write(dump)
     file.close()

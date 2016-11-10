@@ -12,7 +12,8 @@
         "<title:something> <text:owns>",
         "<title:something> is <text:good>",
         "<title:something> is <text:unbelievable>",
-		"<title:action>"
+		"<title:action>",
+        "The <text:big> <text:guide> to <title:something>"
 	],
 	"field": [
 		"<field:name>",

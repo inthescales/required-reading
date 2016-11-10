@@ -17,5 +17,6 @@
 	"good": ["fun", "great", "amazing", "incredible"],
 	"unbelievable": ["incredible", "amazing", "unbelievable", "astounding"],
     "adjective": ["<text:good>", "<text:unbelievable>"],
-    "how_to": ["How To"]
+    "how_to": ["How To"],
+    "text": ["text", "treatise"]
 }

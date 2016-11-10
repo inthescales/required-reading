@@ -80,5 +80,5 @@
 		"adjective": ["marxist", "revolutionary"],
 		"subject": ["Marx", "Lenin", "Mao", "the revolution", "the proletariat", "the bourgoisie", "class", "communism", "socialism", "the dialectic", "contradiction"]
 	}],
-    "source": ["bible.txt"]
+    "source": ["bible.txt", "homer-odyssey.txt", "blake-poems.txt", "carroll-alice.txt", "darwin-origin.txt", "milton-paradise.txt", "plato-republic.txt", "shakespeare-hamlet.txt"]
 }

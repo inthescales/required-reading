@@ -13,7 +13,7 @@
         "<title:something> is <text:good>",
         "<title:something> is <text:unbelievable>",
 		"<title:action>",
-        "The <text:big> <text:guide> to <title:something>"
+        "The <texts:big> <texts:guide> to <title:something>"
 	],
 	"field": [
 		"<field:name>",
@@ -22,8 +22,7 @@
 	"subject": [
 		"<field:subject>!",
 		"<field:subject!> and <field:subject!>",
-		"<field:subject!>, <field:subject!>, and <field:subject!>",
-		"<field:subject#1> <text:lister> <field:subject#1>"
+		"<field:subject!>, <field:subject!>, and <field:subject!>"
 	],
 	"action": [
 		"<text:how_to> <field:verb> <field:subject>",

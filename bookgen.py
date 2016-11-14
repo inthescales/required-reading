@@ -235,6 +235,6 @@ while generated == None or failed:
     field = None
     modifier = None
     print "GENERATING"
-    generated = generate_title()
+    generated = generate_title().title()
 
 print generated

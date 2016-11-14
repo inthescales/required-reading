@@ -1,5 +1,5 @@
 {
-	"on": ["on", "regarding", "relating to", "concerning"],
+	"on": ["on", "regarding", "relating to", "concerning", "all about"],
 	"complete": ["complete", "authoritative", "comprehensive", "big"],
 	"questions": ["questions", "inquiries", "investigations"],
 	"clarifying": ["clarifying", "cracking", "understanding", "revealing", "simplifying", "breaking down"],
@@ -18,5 +18,7 @@
 	"unbelievable": ["incredible", "amazing", "unbelievable"],
     "adjective": ["<text:good>", "<text:unbelievable>"],
     "how_to": ["How To"],
-    "text": ["text", "treatise"]
+    "text": ["text", "treatise"],
+    "concepts": ["concepts", "topics", "themes", "methods"],
+    "introduction": ["introduction"]
 }

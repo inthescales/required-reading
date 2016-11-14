@@ -9,7 +9,146 @@
 		"verb": ["identify"],
 		"gerund": ["identifying"],
 		"practice": ["the identification of"],
-		"object": ["living things", "lifeforms", "organisms", "life processes"]
+		"object": ["living things", "lifeforms", "organisms", "life processes"],
+		"source": ["darwin-origin.txt", "darwin-origin.txt", "darwin-origin.txt"]
+	}, {
+		"name": ["anatomy"],
+		"adj": ["anatomical"],
+		"subject": ["the human body", "human anatomy", "the body", "the human body", "the animal body"],
+		"keyword": ["body", "bodies", "anatomy", "structure", "carnal", "skeleton"],
+		"source": ["darwin-origin.txt"]
+	}, {
+		"name": ["human anatomy"],
+		"adj": ["anatomical"],
+		"subject": ["the human body", "human anatomy", "the body", "the human body"],
+		"keyword": ["body", "bodies", "anatomy", "structure", "carnal", "man", "mankind", "human", "skeleton"],
+		"source": ["darwin-origin.txt"]
+	}, {
+		"name": ["comparative anatomy"],
+		"adj": ["anatomical"],
+		"subject": ["the human body", "human anatomy", "the body", "the human body", "the animal body"],
+		"keyword": ["body", "bodies", "anatomy", "structure", "carnal", "compare", "comparison", "differ", "different", "difference", "skeleton"],
+		"source": ["darwin-origin.txt"]
+	}, {
+		"name": ["biochemistry"],
+		"adj": ["biochemical"],
+		"subject": ["enzymes", "immune response", "genes"],
+		"keyword": ["gene", "ichor"],
+		"source": ["darwin-origin.txt"]
+	}, {
+		"name": ["biotechnology"],
+		"adj": ["biotechnological"],
+		"subject": ["bioengineering", "cloning", "genetics", "DNA", "tissues"],
+		"keyword": ["clone", "cloning", "harness", "yoke", "DNA", "gene"],
+		"source": ["darwin-origin.txt"]
+	}, {
+		"name": ["ecology"],
+		"adj": ["ecological"],
+		"subject": ["ecosystems", "the environment", "biomes"],
+		"keyword": ["land", "system", "chain", "environ", "environment", "population"],
+		"source": ["darwin-origin.txt", "darwin-origin.txt", "darwin-origin.txt"]
+	}, {
+		"name": ["genetics"],
+		"adj": ["genetic"],
+		"subject": ["genes", "mutation", "DNA", "reproduction", "evolution"],
+		"keyword": ["gene", "mutation", "change", "code"],
+		"source": ["darwin-origin.txt"]
+	}, {
+		"name": ["microbiology"],
+		"adj": ["microbiological"],
+		"subject": ["microbes", "germs", "bacteria", "viruses", "cells"],
+		"keyword": ["cell", "cells", "germ", "germs"],
+		"source": ["darwin-origin.txt"]
+	}, {
+		"name": ["mycology"],
+		"adj": ["mycological"],
+		"subject": ["fungi", "mushrooms", "slime mold", "mildew", "lichen", "spores"],
+		"keyword": ["mushroom", "fungus", "mold", "lichen", "spores", "spore"],
+		"source": ["darwin-origin.txt"]
+	}, {
+		"name": ["nutrition"],
+		"adj": ["nutritional"],
+		"subject": ["nutrients", "vitamins", "minerals", "fats", "carbohydrates", "health", "sickness"],
+		"keyword": ["food", "foods", "nourish", "nourishing", "nourishment", "meal"],
+		"source": ["darwin-origin.txt"]
+	}, {
+		"name": ["paleontology"],
+		"adj": ["paleontological"],
+		"subject": ["bones", "fossils", "extinction", "dinosaurs"],
+		"keyword": ["bone", "bones", "ancient", "ancestors"],
+		"source": ["darwin-origin.txt"]
+	}, {
+		"name": ["physiology"],
+		"adj": ["physiological"],
+		"subject": ["body", "systems"],
+		"keyword": ["body", "carnal", "life", "living", "alive"],
+		"source": ["darwin-origin.txt"]
+	}, {
+		"name": ["botany"],
+		"adj": ["botanical"],
+		"subject": ["plants", "vines", "wood", "seeds", "roots", "fruit", "photosynthesis"],
+		"keyword": ["plant", "fruit", "plants", "fruits", "seed", "seeds", "root", "roots"],
+		"source": ["darwin-origin.txt"]
+	}, {
+		"name": ["virology"],
+		"adj": ["virological"],
+		"subject": ["viruses", "RNA", "infection"],
+		"keyword": ["virus", "infect", "infection", "disease"],
+		"source": ["darwin-origin.txt"]
+	}, {
+		"name": ["zoology"],
+		"adj": ["zoological"],
+		"subject": ["animals", "insects", "mammals", "reptiles", "birds", "fish"],
+		"keyword": ["animal", "animals", "beast", "beasts", "creature", "creatues"],
+		"source": ["darwin-origin.txt"]
+	}, {
+		"name": ["entomology"],
+		"adj": ["entomological"],
+		"subject": ["insects", "beetles", "ants", "bees"],
+		"keyword": ["insect", "insects", "bug", "bugs", "louse", "lice", "ant", "ants", "bee", "bees"],
+		"source": ["darwin-origin.txt"]
+	}, {
+		"name": ["herpetology"],
+		"adj": ["herpetological"],
+		"subject": ["snakes", "reptiles", "lizards"],
+		"keyword": ["snake", "snakes", "serpent", "serpents", "lizard", "lizards", "scale", "scales"],
+		"source": ["darwin-origin.txt"]
+	}, {
+		"name": ["cryptozoology"],
+		"adj": ["cryptozoological"],
+		"subject": ["lake beasts", "humanoids", "extraterrestrials", "the unknown"],
+		"keyword": ["strange", "weird", "secret", "beast", "monster"],
+		"source": ["darwin-origin.txt"]
+	}, {
+		"name": ["chemistry"],
+		"adj": ["chemical"],
+		"subject": ["matter", "energy", "reactions", "molecules", "change"],
+		"keyword": ["chemical", "substance", "reaction", "change", "changes"]
+	}, {
+		"name": ["nanotechnology"],
+		"adj": ["nanotechnological"],
+		"subject": ["atoms", "scale", "assembly", "materials"],
+		"keyword": ["small", "tiny", "little", "strong", "power"]
+	}, {
+		"name": ["pharmacology"],
+		"adj": ["pharmacological"],
+		"subject": ["drugs", "medicine", "organisms"],
+		"keyword": ["drug", "drugs", "medicine", "medicinal", "chemical"]
+	}, {
+		"name": ["polymer chemistry"],
+		"adj": ["polymer-chemical"],
+		"subject": ["materials", "polymers", "molecules"],
+		"keyword": ["fabric", "weave", "woven"]
+	}, {
+		"name": ["radio chemistry"],
+		"adj": ["radio-chemical"],
+		"subject": ["radiation", "rays", "decay"],
+		"keyword": ["radiate", "radiant", "decay"]
+	}, {
+		"name": ["flavor science"],
+		"adj": ["flavor science"],
+		"subject": ["taste", "flavor", "molecules", "scent", "sense", "fabrication", "imitation"],
+		"keyword": ["taste", "tastes", "flavor", "flavors", "scent", "scents", "smell"]
 	}, {
 		"name": ["geology"],
 		"adj": ["geological"],
@@ -21,6 +160,522 @@
 		"practice": ["the identification of"],
 		"object": ["rocks", "minerals", "strata", "terrain"]
 	}, {
+		"name": ["environmental science"],
+		"adj": ["environmental science"],
+		"subject": ["the earth", "the environment", "oceans", "pollution", "resources"],
+		"keyword": ["earth", "soil", "land", "sea", "world", "planet"]
+	}, {
+		"name": ["geodesy", "geodetics"],
+		"adj": ["geodesical", "geodetical"],
+		"subject": ["the earth", "metrics", "measurement", "demarcation", "change"],
+		"keyword": ["earth", "pole", "measure", "measurement"]
+	}, {
+		"name": ["geochemistry"],
+		"adj": ["geochemical"],
+		"subject": ["the earth", "minerals", "crystals", "reactions", "soil", "strata"],
+		"keyword": ["earth", "soil", "mineral", "crystal", "chemical", "structure"]
+	}, {
+		"name": ["geography"],
+		"adj": ["geographical"],
+		"subject": ["the earth", "water systems", "landmasses", "climate"],
+		"keyword": ["earth", "land", "border"]
+	}, {
+		"name": ["geophysics"],
+		"adj": ["geophysical"],
+		"subject": ["the earth", "gravity", "tides", "tectonics", "the atmosphere"],
+		"keyword": ["earth", "planet", "pole"]
+	}, {
+		"name": ["hydrology"],
+		"adj": ["hydrological"],
+		"subject": ["the earth", "the oceans", "rivers", "the water table", "watersheds", "water flow", "drainage"],
+		"keyword": ["earth", "water", "waters", "sea", "seas", "ocean", "oceans", "rain", "rains"]
+	}, {
+		"name": ["meteorology"],
+		"adj": ["meteorological"],
+		"subject": ["weather", "precipitation", "the atmosphere", "modeling", "prediction"],
+		"keyword": ["heavens", "heaven", "sky", "skies", "rain", "rains", "thunder", "cloud", "clouds"]
+	}, {
+		"name": ["mineralogy"],
+		"adj": ["mineralogical"],
+		"subject": ["crystals", "molecules", "formation"],
+		"keyword": ["crystal", "gem", "stone", "stones", "gems", "crystals", "crystallize"]
+	}, {
+		"name": ["speleology"],
+		"adj": ["speleological"],
+		"subject": ["caves", "caverns", "tunnels", "cartography"],
+		"keyword": ["cave", "cavern", "caverns", "tartarus", "subterranean", "lost", "hidden", "hades"]
+	}, {
+		"name": ["volcanology"],
+		"adj": ["volcanological"],
+		"subject": ["lava", "magma", "eruption", "formation", "prediction"],
+		"keyword": ["volcano", "eruption", "erupt", "smoke", "explosion"]
+	}, {
+		"name": ["tectonics"],
+		"adj": ["tectonic"],
+		"subject": ["plates", "continents", "drift", "seismic events"],
+		"keyword": ["earth", "stone", "plate", "plates", "continent", "continents"]
+	}, {
+		"name": ["astronomy"],
+		"adj": ["astronomical"],
+		"subject": ["stars", "planets", "nebulas", "the milky way", "the universe", "radiation"],
+		"keyword": ["star", "stars", "heaven", "heavens", "galaxy", "constellation", "constellations"]
+	}, {
+		"name": ["astrophysics"],
+		"adj": ["astrophysical"],
+		"subject": ["stars", "radiation", "gravity", "black holes", "white dwarfs", "red giants"],
+		"keyword": ["stars", "heavens", "ray", "rays"]
+	}, {
+		"name": ["mathematics", "math"],
+		"adj": ["mathematical"],
+		"subject": ["numbers", "operations", "sets", "logic", "proof", "probability"],
+		"keyword": ["number", "quantity", "amount", "numbers", "sum"]
+	}, {
+		"name": ["modal logic"],
+		"adj": ["modal logic"],
+		"subject": ["predicates", "propositions", "modality", "quality", "axioms"],
+		"keyword": ["logic", "logical", "mode", "modes", "modal", "theory"]
+	}, {
+		"name": ["algebra"],
+		"adj": ["algebraic"],
+		"subject": ["groups", "rings", "fields", "abstraction"],
+		"keyword": ["broken", "reunion", "restoration", "unknown", "value"]
+	}, {
+		"name": ["category theory"],
+		"adj": ["category theory"],
+		"subject": ["categories", "functors", "topology"],
+		"keyword": ["category", "theory", "group"]
+	}, {
+		"name": ["probability"],
+		"adj": ["probability"],
+		"subject": ["combinatorics", "discrete events", "continuous variables", "convergence"],
+		"keyword": ["code", "secret", "hidden"]
+	}, {
+		"name": ["cryptography"],
+		"adj": ["cryptographic"],
+		"subject": ["encryption", "ciphers", "codes", "authentication", "analysis"],
+		"keyword": ["probability", "chance", "chance"]
+	}, {
+		"name": ["statistics"],
+		"adj": ["statistical"],
+		"subject": ["populations", "models", "data"],
+		"keyword": ["statistic", "number", "count", "model", "census"]
+	}, {
+		"name": ["actuarial science"],
+		"adj": ["actuarial"],
+		"subject": ["data", "models", "prediction", "risk"],
+		"keyword": ["risk", "danger", "foretell", "predict", "prediction"]
+	}, {
+		"name": ["geometry"],
+		"adj": ["geometric"],
+		"subject": ["angles", "points", "lines", "planes", "curves", "surfaces", "manifolds", "dimension", "symmetry"],
+		"keyword": ["geometry", "angle", "shape", "form", "dimension", "symmetry"]
+	}, {
+		"name": ["number theory"],
+		"adj": ["number theory"],
+		"subject": ["primes", "integers", "rational numbers", "arithmetic", "analysis ", "real numbers "],
+		"keyword": ["number", "numbers", "arithmetic", "sum"]
+	}, {
+		"name": ["trigonometry"],
+		"adj": ["trigonometric"],
+		"subject": ["angles", "triangles", "functions", "measurement"],
+		"keyword": ["angle", "angles", "measures", "measure", "measuring"]
+	}, {
+		"name": ["calculus"],
+		"adj": ["calculus"],
+		"subject": ["analysis", "limits", "theorems"],
+		"keyword": ["calculus", "limit", "limits", "limiting"]
+	}, {
+		"name": ["quantum mechanics"],
+		"adj": ["quantum"],
+		"subject": ["fields", "atoms", "photons ", "superposition"],
+		"keyword": ["strange", "position", "momentum", "movement", "distance"]
+	}, {
+		"name": ["physics"],
+		"adj": ["physics"],
+		"subject": ["motion", "mass", "bodies", "energy", "gravity"],
+		"keyword": ["mass", "body", "gravity", "motion", "energy"]
+	}, {
+		"name": ["fluid dynamics"],
+		"adj": ["fluid dynamics"],
+		"subject": ["flow", "water", "air", "pressure", "density", "temperature"],
+		"keyword": ["flow", "river", "current", "pressure"]
+	}, {
+		"name": ["mechanics", "classical mechanics"],
+		"adj": ["mechanical"],
+		"subject": ["bodies", "force", "displacement", "motion"],
+		"keyword": ["force", "motion", "impulse", "mechanical"]
+	}, {
+		"name": ["optics"],
+		"adj": ["optical"],
+		"subject": ["light", "lenses", "radiation", "diffraction", "interference", "refraction", "reflection", "instruments"],
+		"keyword": ["lens", "optical", "glass", "bend", "light"]
+	}, {
+		"name": ["nuclear physics", "atomic physics"],
+		"adj": ["nuclear physics", "atomic physics"],
+		"subject": ["particles", "nuclei", "decay", "fission", "fusion", "radiation"],
+		"keyword": ["mote", "particle", "split", "join", "radiate", "radiates", "radiant"]
+	}, {
+		"name": ["particle physics", "high energy physics"],
+		"adj": ["particle physics", "high energy physics"],
+		"subject": ["quarks", "boson", "neutrinos", "charm", "spin", "muons"],
+		"keyword": ["mote", "particle", "charm", "spin", "radiate", "radiates"]
+	}, {
+		"name": ["acoustics"],
+		"adj": ["acoustic"],
+		"subject": ["sound", "waves", "propagation", "pressure", "frequency"],
+		"keyword": ["sound", "wave", "voice", "loud", "hear"]
+	}, {
+		"name": ["thermodynamics"],
+		"adj": ["thermodynamic"],
+		"subject": ["heat", "energy", "phase change", "matter", "mechanics", "equilibrium"],
+		"keyword": ["heat", "cold", "boil", "freeze", "temperature", "temperate"]
+	}, {
+		"name": ["theoretical physics"],
+		"adj": ["theoretical physics"],
+		"subject": ["models", "relativity", "strings", "controversy"],
+		"keyword": ["theory", "philosophy", "idea", "string", "dream"]
+	}, {
+		"name": ["agronomy"],
+		"adj": ["agronomical"],
+		"subject": ["food", "fuel", "fiber", "reclamation", "the environment", "energy", "irrigation", "crop rotation", "drainage"],
+		"keyword": ["soil", "earth", "fruit", "fruits", "seed", "sow", "reap", "reaping", "crop", "crops", "field", "fertile", "fertility"]
+	}, {
+		"name": ["food science"],
+		"adj": ["food science"],
+		"subject": ["food", "nutrition", "public health", "processing", "extraction", "production"],
+		"keyword": ["food", "nourish", "meal", "nourishment"]
+	}, {
+		"name": ["computer science"],
+		"adj": ["computer science"],
+		"subject": ["data", "types", "languages", "theory", "algorithms"],
+		"keyword": ["machine", "computer", "language", "code"]
+	}, {
+		"name": ["algorithms"],
+		"adj": ["algorithms"],
+		"subject": ["complexity", "determinism", "analysis", "implementation", "formalization"],
+		"keyword": ["algorithm", "plan", "pattern", "method"]
+	}, {
+		"name": ["artificial intelligence"],
+		"adj": ["artificial intelligence"],
+		"subject": ["neural networks", "semantics", "training", "data", "design"],
+		"keyword": ["machine", "mind", "brain", "human", "wisdom", "intelligence", "intelligent", "wise"]
+	}, {
+		"name": ["computation theory", "theory of computation"],
+		"adj": ["computation theory", "computation-theoretical"],
+		"subject": ["automata", "computability", "proof", "formal languages", "complexity", "models"],
+		"keyword": ["computer", "theory", "complex"]
+	}, {
+		"name": ["chemical engineering"],
+		"adj": ["chemical engineering"],
+		"subject": ["polymers", "reactions", "processes"],
+		"keyword": ["create", "chemical", "engineer"]
+	}, {
+		"name": ["civil engineering"],
+		"adj": ["civil engineering"],
+		"subject": ["transportation", "surveying", "infrastructure", "environmental impact"],
+		"keyword": ["road", "bridge", "foundation", "infrastructure", "stability"]
+	}, {
+		"name": ["electrical engineering"],
+		"adj": ["electrical engineering"],
+		"subject": ["electronics", "communication", "circuits", "signals", "control"],
+		"keyword": ["electric", "electrical", "circuit", "signal", "control"]
+	}, {
+		"name": ["mechanical engineering"],
+		"adj": ["mechanical engineering"],
+		"subject": ["heating and cooling", "transport", "aircraft", "watercraft", "robotics", "weaponry"],
+		"keyword": ["machine", "machines", "tool", "tools", "craft", "crafts"]
+	}, {
+		"name": ["materials science"],
+		"adj": ["materials science"],
+		"subject": ["biomaterials", "ceramics", "crystals", "nanomaterials", "polymers", "metallurgy", "semiconductors"],
+		"keyword": ["materials", "material", "fabric", "weave"]
+	}, {
+		"name": ["medicine"],
+		"adj": ["medical"],
+		"subject": ["health", "prevention", "pharmacology", "diagnosis", "treatment"],
+		"keyword": ["heal", "health", "cure", "doctor", "medicine", "medicinal", "healer"]
+	}, {
+		"name": ["dentistry"],
+		"adj": ["dental"],
+		"subject": ["disease", "surgery", "infection", "orthodontia", "treatment", "implants"],
+		"keyword": ["tooth", "teeth", "dental", "mouth", "bite"]
+	}, {
+		"name": ["nursing"],
+		"adj": ["nursing"],
+		"subject": ["care", "intervention", "patient education", "living assistance"],
+		"keyword": ["nurse", "care", "nurses", "tend", "caring"]
+	}, {
+		"name": ["surgery"],
+		"adj": ["surgical"],
+		"subject": ["instruments", "amputation", "exploration", "care", "staging"],
+		"keyword": ["surgery", "surgeon", "cut", "slice", "incision", "heal", "health"]
+	}, {
+		"name": ["epidemiology"],
+		"adj": ["epidemiological"],
+		"subject": ["disease", "risk factors", "public health", "analysis", "prevention", "transmission"],
+		"keyword": ["disease", "diseases", "diseased", "sick", "sickness", "ill", "illness", "epidemic", "pandemic", "cough", "wildfire"]
+	}, {
+		"name": ["physical therapy"],
+		"adj": ["physical therapy"],
+		"subject": ["muscles", "joints", "ligatures", "exercise", "treatment"],
+		"keyword": ["body", "muscle", "exercise", "injury", "injure"]
+	}, {
+		"name": ["veterinary medicine"],
+		"adj": ["veterinary"],
+		"subject": ["diet", "disease transmission", "treatment", "parasites", "cats", "dogs", "birds", "reptiles", "fish", "rodents", "livestock"],
+		"keyword": ["animal", "beast", "animals", "beasts", "heal", "health", "husbandry", "husbandman"]
+	}, {
+		"name": ["prosthetics"],
+		"adj": ["prosthetics"],
+		"subject": ["limbs", "joints", "materials", "robotics"],
+		"keyword": ["limb", "body", "whole", "restore", "limbs", "wholeness", "restoration", "hand", "arm", "leg"]
+	}, {
+		"name": ["psychiatry"],
+		"adj": ["psychiatric"],
+		"subject": ["diagnosis", "behavior", "mood", "cognition", "perception", "abnormalities"],
+		"keyword": ["mind", "sane", "sanity", "health", "mental"]
+	}, {
+		"name": ["psychology"],
+		"adj": ["psychology"],
+		"subject": ["mind", "behavior", "the unconscious", "socialization", "cognitive function"],
+		"keyword": ["mind", "mental", "conscious", "consciousness", "unconscious", "dream", "relationship"]
+	}, {
+		"name": ["social psychology"],
+		"adj": ["social psychology"],
+		"subject": ["self-concept", "social cognition", "influence", "group dynamics", "attitudes"],
+		"keyword": ["mind", "community", "communities", "interaction", "group", "groups", "crowd", "crowds"]
+	}, {
+		"name": ["cognitive science"],
+		"adj": ["cognitive science"],
+		"subject": ["cognition", "memory", "perception", "attention", "reasoning", "emotion", "representation"],
+		"keyword": ["mind", "minds", "thought", "thoughts", "brain", "brains", "reason", "emotion", "memory"]
+	}, {
+		"name": ["performing arts"],
+		"adj": ["performing arts"],
+		"subject": ["technique", "performance", "expression", "art", "analysis", "criticism"],
+		"keyword": ["art", "performance", "perform", "beauty", "beautiful", "dance", "song ", "music "]
+	}, {
+		"name": ["music"],
+		"adj": ["musical"],
+		"subject": ["harmony", "melody", "rhythm", "performance", "arrangement", "composition", "instrumentation"],
+		"keyword": ["music", "musical", "song", "sing", "songs", "singing", "sing", "play", "plays", "playing", "drum", "lyre", "guitar", "horn", "melody", "rhythm", "harmony", "harmonic", "melodic", "rhythmic"]
+	}, {
+		"name": ["dance"],
+		"adj": ["dance"],
+		"subject": ["choreography", "movement", "rhythm", "traditions", "approaches", "performance"],
+		"keyword": ["art", "dance", "dances", "dancing", "rhythm", "beat", "body", "bodies", "flying", "move", "movement", "beauty", "beautiful"]
+	}, {
+		"name": ["theater"],
+		"adj": ["theatrical"],
+		"subject": ["acting", "directing", "dramaturgy", "puppetry", "stage design", "drama"],
+		"keyword": ["theater", "perform", "performing", "performance", "stage", "direct", "director", "act", "actor", "actress", "actors", "acting", "acts", "present", "presents", "scene", "scenes", "player", "players"]
+	}, {
+		"name": ["film"],
+		"adj": ["film"],
+		"subject": ["theory", "criticism", "techniques", "cinematography", "drama", "analysis"],
+		"keyword": ["drama", "film", "films", "movie", "movies", "theater", "theaters", "act", "acting", "actor", "actors", "actress", "player", "players", "screen", "screens", "projector"]
+	}, {
+		"name": ["visual arts"],
+		"adj": ["visual arts"],
+		"subject": ["media", "application", "technique", "criticism", "concept", "interpretation", "representation"],
+		"keyword": ["art", "beauty", "beautiful", "image", "images", "create", "represent", "represents"]
+	}, {
+		"name": ["fine art"],
+		"adj": ["fine art"],
+		"subject": ["media", "application", "technique", "criticism", "concept", "interpretation", "representation", "history"],
+		"keyword": ["art", "beauty", "beautiful", "image", "images", "create", "represent", "represents", "interpret", "interprets", "feeling"]
+	}, {
+		"name": ["photography"],
+		"adj": ["photography"],
+		"subject": ["techniques", "processing", "equipment", "focus", "exposure"],
+		"keyword": ["art", "photo", "photos", "photograph", "photographs", "photography", "image", "images", "still", "motion"]
+	}, {
+		"name": ["sculpture"],
+		"adj": ["sculpture"],
+		"subject": ["carving", "addition", "materials", "representation", "interpretation", "statuary", "kinetic art", "installation"],
+		"keyword": ["statue", "statues", "statuary", "stone", "chisel", "carve", "chisels", "carve", "sculpt", "scults", "sculpting", "sculpture"]
+	}, {
+		"name": ["architecture"],
+		"adj": ["architectural"],
+		"subject": ["form", "function", "design", "aesthetics", "structure"],
+		"keyword": ["architect", "architecture", "structure", "foundation", "wall", "build", "construct", "consctruction", "building", "builds", "roof"]
+	}, {
+		"name": ["fashion"],
+		"adj": ["fashion"],
+		"subject": ["aesthetics", "function", "taste", "style", "textiles", "materials", "the mass market", "haute couture"],
+		"keyword": ["fashion", "fashions", "garment", "garments", "garb", "clothes", "clothing", "cloth", "fabric", "raiment"]
+	}, {
+		"name": ["art history"],
+		"adj": ["art history"],
+		"subject": ["aesthetics", "style", "ornamentation", "the masters", "great works", "the reneissance", "the ancient world", "monuments"],
+		"keyword": ["art", "arts", "master", "mastery", "ornament"]
+	}, {
+		"name": ["geography"],
+		"adj": ["geographical"],
+		"subject": ["cartography", "economy", "populations", "war", "tourism"],
+		"keyword": ["geography", "land", "terrain", "world", "map", "maps"]
+	}, {
+		"name": ["world history"],
+		"adj": ["world history"],
+		"subject": ["difference", "integration", "culture", "politics", "conflict", "migration"],
+		"keyword": ["history", "histories", "account", "accounts", "world", "people", "peoples", "land", "nations", "cultures", "culture", "tribes"]
+	}, {
+		"name": ["modern history"],
+		"adj": ["modern history"],
+		"subject": ["cities", "technology", "politics", "war", "ideology", "progress", "globalization", "capitalism"],
+		"keyword": ["history", "histories", "account", "accounts", "world", "global", "people", "peoples", "modern", "modernity"]
+	}, {
+		"name": ["American history"],
+		"adj": ["American history"],
+		"subject": ["colonialism", "manifest destiny", "capitalism", "the founding fathers", "washington", "democracy"],
+		"keyword": ["history", "washington", "america", "american", "columbia", "columbian", "united", "unite"],
+        "source": ["declaration-of-independence.txt", "declaration-of-independence.txt", "declaration-of-independence.txt"]
+	}, {
+		"name": ["ancient history"],
+		"adj": ["ancient history"],
+		"subject": ["Greece", "Rome", "China", "India", "Persia", "Egypt", "migration", "tribes", "antiquity", "the classics", "civilization", "empires"],
+		"keyword": ["history", "ancient", "antique", "antiquity", "classical", "bygone", "forgotten"]
+	}, {
+		"name": ["linguistics"],
+		"adj": ["linguistic"],
+		"subject": ["syntax", "semantics", "morphology", "translation", "speech", "phonetics", "pragmatics"],
+		"keyword": ["language", "languages", "word", "words", "speak", "speaking", "speech", "tongue", "tongues"]
+	}, {
+		"name": ["literature"],
+		"adj": ["literary"],
+		"subject": ["theory", "criticism", "rhetoric", "polemic", "analysis", "technique", "expression", "metaphor"],
+		"keyword": ["literature", "story", "stories", "account", "accounts", "book", "books"]
+	}, {
+		"name": ["creative writing"],
+		"adj": ["creative writing"],
+		"subject": ["plot", "characterization", "symbolism", "technique", "interpretation"],
+		"keyword": ["literature", "story", "stories", "account", "accounts", "book", "books", "character"]
+	}, {
+		"name": ["poetry"],
+		"adj": ["poetic"],
+		"subject": ["form", "metre", "symbolism", "rhythm", "criticism", "rhyme", "metaphor"],
+		"keyword": ["poem", "poet", "poets", "poetry", "rhyme", "rhyming", "rhythm", "verse", "verses"]
+	}, {
+		"name": ["rhetoric"],
+		"adj": ["rhetorical"],
+		"subject": ["argument", "discourse", "persuasion", "logos", "pathos", "ethos", "polemic"],
+		"keyword": ["argue", "argument", "rhetoric", "sophist", "sophistry", "persuasion", "persuade", "persuades"]
+	}, {
+		"name": ["philosophy"],
+		"adj": ["philosophical"],
+		"subject": ["ideas", "argument", "dialectic", "the mind", "law", "the nature of existence"],
+		"keyword": ["philosophy", "philosopher", "argue", "argument", "investigate", "pursue", "wisdom", "pursuit", "idea"]
+	}, {
+		"name": ["epistemology"],
+		"adj": ["epistemological"],
+		"subject": ["knowledge", "proof", "reasoning", "justification"],
+		"keyword": ["truth", "true", "knowledge", "know", "wisdom", "proof", "evidence"]
+	}, {
+		"name": ["ethics"],
+		"adj": ["ethical"],
+		"subject": ["virtue", "values", "reasoning", "meta-ethics", "normativity", "law"],
+		"keyword": ["virtue", "virtuous", "morality", "moral", "ethical", "ethics", "ethic", "justice"]
+	}, {
+		"name": ["logic"],
+		"adj": ["logical"],
+		"subject": ["implication", "entailment", "definition", "paradox", "reasoning", "inference", "predicates"],
+		"keyword": ["logic", "logical", "logos", "reason", "reasoning"]
+	}, {
+		"name": ["metaphysics"],
+		"adj": ["metaphysical"],
+		"subject": ["ontology", "free will", "purpose", "existence", "phenomena"],
+		"keyword": ["nature", "exist", "existing", "existence", "being", "reality", "truth"]
+	}, {
+		"name": ["political philosophy"],
+		"adj": ["political philosophy"],
+		"subject": ["law", "consent", "authority", "ethics"],
+		"keyword": ["king", "power", "kings", "kingdom", "rule", "ruler", "govern", "government", "law", "laws", "nation"]
+	}, {
+		"name": ["economics"],
+		"adj": ["economic"],
+		"subject": ["markets", "efficiency", "the public sector", "growth", "policy", "supply", "demand", "capital"],
+		"keyword": ["economy", "economic", "money", "wealth", "coin", "coins", "riches"]
+	}, {
+		"name": ["finance"],
+		"adj": ["financial"],
+		"subject": ["investment", "asset", "liability", "risk", "profit", "capital"],
+		"keyword": ["finance", "credit", "wealth", "profit", "growth", "invest", "investment"]
+	}, {
+		"name": ["microeconomics"],
+		"adj": ["microeconomic"],
+		"subject": ["supply", "demand", "equilibrium", "markets", "market failure", "efficiency", "competition", "monopoly"],
+		"keyword": ["money", "wealth", "coin", "compete", "competition", "survive", "demand", "supply", "demands"]
+	}, {
+		"name": ["macroeconomics"],
+		"adj": ["macroeconomic"],
+		"subject": ["models", "consumption", "inflation", "unemployment", "trade", "finance"],
+		"keyword": ["money", "wealth", "coin", "compete", "nations", "trade", "trading", "exchange", "exchanges"]
+	}, {
+		"name": ["law"],
+		"adj": ["legal"],
+		"subject": ["foundations", "principles", "administration", "history"],
+		"keyword": ["law", "laws", "legal", "rule", "ruler", "code", "codes", "judge", "judgement", "judges"]
+	}, {
+		"name": ["civil law"],
+		"adj": ["civil law"],
+		"subject": ["rights", "contracts", "duties", "compensation", "injury", "litigation"],
+		"keyword": ["law", "laws", "legal", "jury", "judge", "judgement", "judges", "contract", "contracts", "compact"]
+	}, {
+		"name": ["criminal law", "penal law"],
+		"adj": ["criminal law"],
+		"subject": ["jurisdiction", "harm", "crime", "punishment", "rehabilitation", "restoration", "deterrence"],
+		"keyword": ["law", "laws", "legal", "jury", "judge", "judgement", "judges", "crime", "criminal", "guilt", "guilty", "punish", "punishment", "punishes"]
+	}, {
+		"name": ["corporate law"],
+		"adj": ["corporate law"],
+		"subject": ["corporations", "shareholders", "consumers", "the environment", "communities", "liability"],
+		"keyword": ["law", "laws", "legal", "corporation", "incorporate", "incorporation", "body", "bodies"]
+	}, {
+		"name": ["tax law"],
+		"adj": ["tax law"],
+		"subject": ["taxes", "income", "wealth", "estates", "capital gains", "labor", "evasion", "efficiency", "incentives"],
+		"keyword": ["law", "laws", "legal", "tax", "taxes", "tariff", "tariffs", "gold", "wealth", "money", "collect"]
+	}, {
+		"name": ["political science"],
+		"adj": ["political science"],
+		"subject": ["the state", "law", "the people", "policy", "authority"],
+		"keyword": ["nation", "nations", "rule", "rules", "ruler", "king", "kings", "preside", "presides", "authority"]
+	}, {
+		"name": ["civics"],
+		"adj": ["civics"],
+		"subject": ["citizenship", "law", "education", "ethics", "duty", "rights", "the state"],
+		"keyword": ["citizen", "citizens", "people", "citizenship", "populus", "duty", "duties", "rights"]
+	}, {
+		"name": ["international relations"],
+		"adj": ["international relations"],
+		"subject": ["diplomacy", "war", "policy", "sovereignty", "power", "interdependence"],
+		"keyword": ["citizen", "citizens", "people", "citizenship", "populus", "duty", "duties", "rights"]
+	}, {
+		"name": ["sociology"],
+		"adj": ["sociological"],
+		"subject": ["society", "networks", "institution", "policy", "dynamics", "change", "order"],
+		"keyword": ["culture", "cultures", "people", "peoples", "crowd", "crowds", "group"]
+	}, {
+		"name": ["gender studies"],
+		"adj": ["gender studies"],
+		"subject": ["gender", "sex", "sexuality", "masculinity", "femininity", "ambiguity", "socialization"],
+		"keyword": ["gender", "sex", "man", "woman", "men", "women", "identity", "identities"]
+	}, {
+		"name": ["queer theory"],
+		"adj": ["queer theory"],
+		"subject": ["gender", "sex", "sexuality", "transgression", "reaction", "society", "identity"],
+		"keyword": ["gender", "sex", "man", "woman", "men", "women", "identity", "identities"]
+	}, {
+		"name": ["critical race theory"],
+		"adj": ["critical race theory"],
+		"subject": ["power", "white supremacy", "oppression", "resistance", "community", "injustice"],
+		"keyword": ["race", "races", "injustice", "oppression", "oppress", "dominate", "dominance", "white", "black"]
+	}, {
+		"name": ["sociolinguistics"],
+		"adj": ["sociolinguistic"],
+		"subject": ["pragmatics", "class", "identity", "geography", "sociolects", "language change"],
+		"keyword": ["people", "peoples", "community", "communities", "language", "langauges", "tongues", "speak", "speech", "speaking"]
+	}, {
 		"name": ["theology"],
 		"adj": ["theological"],
 		"subject": ["God", "Goddess", "gods", "goddesses", "deities", "divinity", "the soul", "the afterlife", "demons", "devils", "spirits", "ancestors"],
@@ -29,12 +684,21 @@
 		"gerund": ["understanding", "communing with"],
 		"practice": ["understanding of", "communion with"],
 		"object": ["the divine", "God", "the spiritual self", "the spirit", "the soul", "divinity"],
-        "source": ["bible.txt"]
+		"source": ["bible.txt"]
+	}, {
+		"name": ["astrology"],
+		"adj": ["astrology"],
+		"subject": ["the zodiac", "charts", "the planets", "the stars", "energies"],
+		"keyword": ["star", "stars", "heavens", "heaven", "planet", "planets", "mars", "venus", "future"]
+	}, {
+		"name": ["witchcraft"],
+		"adj": ["witchcraft"],
+		"subject": ["potions", "hexes", "curses", "familiars", "spirits", "Satan"],
+		"keyword": ["craft", "sabbath", "witch", "witches", "witchcraft", "curse"],
+		"source": ["malleus.txt"]
 	}],
 	"modifier_titles": [
-		"<title:field>: <title:modifier>",
-		"<title:modifier>: <title:field>",
-		"<title:modifier_action>"
+		"<excerpt>: <title:modifier_second>"
 	],
 	"modifiers": [{
 		"adjective": ["applied", "practical"],
@@ -44,7 +708,8 @@
 	}, {
 		"adjective": ["historical"]
 	}, {
-		"adjective": ["critical"]
+		"adjective": ["critical"],
+		"subject": ["criticism", "society", "hierarchy"]
 	}, {
 		"adjective": ["feminist"],
 		"subject": ["women", "gender", "sex"]
@@ -63,22 +728,24 @@
 		"adjective": ["biblical"],
 		"subject": ["God", "Jesus", "faith", "Christianity", "Satan", "The Second Coming"],
 		"title": ["<field:subject> in the <text:period> of <modifier:subject>", "Holy <field:subject>!"],
-        "source": ["bible.txt", "bible.txt", "bible.txt", "bible.txt", "bible.txt", "bible.txt", "bible.txt"]
+		"source": ["bible.txt", "bible.txt", "bible.txt", "bible.txt", "bible.txt", "bible.txt", "bible.txt"]
 	}, {
 		"adjective": ["speculative"],
-		"subject": ["technology", "parallel worlds", "the multiverse", "the future"]
+		"subject": ["technology", "parallel worlds", "the multiverse", "the future", "the singularity"]
 	}, {
 		"adjective": ["business"],
 		"subject": ["finance", "the economy", "development", "profit"],
 		"verb": ["make"],
 		"gerund": ["making"],
 		"practice": ["making"],
-        "object": ["money", "a profit"]
+		"object": ["money", "a profit"]
 	}, {
-		"adjective": ["postmodern"]
+		"adjective": ["postmodern"],
+		"subject": ["subjectivity", "ideology", "narratives", "truth", "discourse", "pluralism", "irony", "relativism"]
 	}, {
 		"adjective": ["marxist", "revolutionary"],
-		"subject": ["Marx", "Lenin", "Mao", "the revolution", "the proletariat", "the bourgoisie", "class", "communism", "socialism", "the dialectic", "contradiction"]
+		"subject": ["Marx", "Lenin", "Mao", "the revolution", "the proletariat", "the bourgoisie", "class", "communism", "socialism", "the dialectic", "contradiction"],
+		"source": ["marx-critique.txt", "marx-critique.txt", "marx-critique.txt", "marx-critique.txt", "marx-critique.txt", "marx-critique.txt", "marx-critique.txt"]
 	}],
-    "source": ["bible.txt", "homer-odyssey.txt", "blake-poems.txt", "carroll-alice.txt", "darwin-origin.txt", "milton-paradise.txt", "plato-republic.txt", "shakespeare-hamlet.txt"]
+	"source": ["bible.txt", "homer-odyssey.txt", "blake-poems.txt", "carroll-alice.txt", "darwin-origin.txt", "milton-paradise.txt", "plato-republic.txt", "shakespeare-hamlet.txt", "oxford-american-essays.txt", "declaration-of-independence.txt"]
 }

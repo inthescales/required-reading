@@ -1,28 +1,27 @@
 {
 	"formats": [
 		"<excerpt>",
-        "<excerpt>: <title:subject>",
-        "<excerpt>: <title:something>",
-        "<excerpt>",
-        "<excerpt>: <title:subject>",
-        "<excerpt>: <title:something>",
-        "<title:subject>",
-		"<title:field>: <title:subject>",
-		"<title:subject>: <title:field>",
-        "<title:something> <text:owns>",
-        "<title:something> is <text:good>",
-        "<title:something> is <text:unbelievable>",
-		"<title:action>",
-        "The <texts:big> <texts:guide> to <title:something>"
+		"<excerpt>: <title:second>"
+	],
+	"second": [
+		"<title:field>",
+		"<title:subject>"
+	],
+	"modifier_second": [
+		"<title:modifier>"
 	],
 	"field": [
 		"<field:name>",
-		"<text:on> <field:name>"
+		"<text:on> <field:name>",
+		"<texts:concepts> in <field:name>",
+		"<field:adjective> <texts:concepts>",
+		"<texts:introduction> to <field:name>",
+		"<field:name> from <field:subject!> to <field:subject!>"
 	],
 	"subject": [
-		"<field:subject>!",
 		"<field:subject!> and <field:subject!>",
-		"<field:subject!>, <field:subject!>, and <field:subject!>"
+		"<field:subject!>, <field:subject!>, and <field:subject!>",
+		"from <field:subject!> to <field:subject!>"
 	],
 	"action": [
 		"<text:how_to> <field:verb> <field:subject>",
@@ -33,10 +32,11 @@
 		"<field:practice> <field:object>",
 		"<field:gerund> <field:object>"
 	],
-    "no_modifier": [
-        "<text:unbelievable> <field:name>"
-    ],
+	"no_modifier": [
+		"<text:unbelievable> <field:name>"
+	],
 	"modifier": [
+		"<field:name>",
 		"<field:subject> and <modifier:subject>",
 		"<modifier:subject> and <field:subject>"
 	],
@@ -45,6 +45,20 @@
 		"<modifier:gerund> <modifier:object>, <field:gerund> <field:object>",
 		"<modifier:gerund> <modifier:object> with <field:subject>",
 		"<field:gerund> <field:object> with <modifier:subject>"
+	],
+	"saved": [
+		"<excerpt>: <title:subject>",
+		"<excerpt>: <title:something>",
+		"<excerpt>",
+		"<excerpt>: <title:subject>",
+		"<excerpt>: <title:something>",
+		"<title:subject>",
+		"<title:field>: <title:subject>",
+		"<title:subject>: <title:field>",
+		"<title:something> <text:owns>",
+		"<title:something> is <text:good>",
+		"<title:something> is <text:unbelievable>",
+		"The <texts:big> <texts:guide> to <title:something>"
 	]
 
 }

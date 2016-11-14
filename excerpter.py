@@ -17,6 +17,8 @@ for modifier in field_data["modifiers"]:
     if "keyword" in modifier:
         keywords.extend(modifier["keyword"])
 
+keywords = list(set(keywords))
+
 def prepare_data(data):
     mod = re.sub('[ \n\r]+', ' ', data)
     return mod
@@ -45,14 +47,14 @@ def find(keywords, file):
             for j in range(0,5):
                 if i-j > 0 and i-j+5 < len(words):
                     term = words[i-j:i-j+5]
-                    cleaned = clean(term)
+                    cleaned = clean(word, term)
                     if cleaned:
                         #print cleaned
                         finds[word].append(" ".join(cleaned))
                         
     return finds
 
-def clean(term):
+def clean(initial_word, term):
    
     #print term
     
@@ -101,7 +103,11 @@ def clean(term):
                 is_last = i == len(term)-1
                 
         # Check category
-        tags = tag(word)[0]
+        tagged = tag(word)
+        if not tagged:
+            continue
+            
+        tags = tagged[0]
         if is_last and ('CC' in tags or 'IN' in tags or 'DT' in tags or 'PRP' in tags or 'PRP$' in tags or 'WDT' in tags or 'WP$' in tags or 'MD' in tags or 'TO' in tags or 'WRB' in tags or 'VB' in tags or 'VBZ' in tags or 'VBP' in tags or 'VBD' in tags or 'RB' in tags):
             term = term[:i]
             continue
@@ -111,12 +117,12 @@ def clean(term):
     
     #print term
     
-    if len(term) >= 3:
+    if len(term) >= 3 and initial_word in term:
         return term
     else:
         return None
 
-corpora = ['homer-odyssey.txt', 'austen-emma.txt', 'bible.txt', 'blake-poems.txt', 'carroll-alice.txt', 'darwin-origin.txt', 'malleus.txt', 'marx-critique.txt', 'milton-paradise.txt', 'plato-republic.txt', 'shakespeare-hamlet.txt']
+corpora = ['homer-odyssey.txt', 'bible.txt', 'blake-poems.txt', 'carroll-alice.txt', 'darwin-origin.txt', 'malleus.txt', 'marx-critique.txt', 'milton-paradise.txt', 'plato-republic.txt', 'shakespeare-hamlet.txt', 'declaration-of-independence.txt', 'oxford-american-essays.txt']
 
 finds = {}
 for corpus in corpora:

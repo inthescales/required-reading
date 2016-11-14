@@ -86,7 +86,7 @@ def get_sources():
 def get_field():
     global modifier
     field = dict(random.choice(get_value("fields:fields")))
-    if random.random() <= 0.6:
+    if random.random() <= 0.05:
         modifier = get_modifier()
         field["name"] = [random.choice(modifier["adjective"]) + " " + random.choice(field["name"])]
     else:
@@ -199,15 +199,16 @@ def get_value(node):
     elif tokens[0] == "modifier":
         dict = modifier
     elif tokens[0] == "excerpt":
+    
         keyword = random.choice(get_keywords())
         source = random.choice(get_sources())
-        if excerpts and source in excerpts and keyword in excerpts[source]:
+        print "Excerpt: " + keyword + " in " + source
+        
+        if excerpts and source in excerpts and keyword in excerpts[source] and len(excerpts[source][keyword]) > 0:
             excerpt = random.choice(excerpts[source][keyword])
             return [excerpt]
         else:
             print "Failed: invalid source or keyword"
-            print source
-            print keyword
             failed = True
             return ["ERROR"]
         

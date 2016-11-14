@@ -317,7 +317,7 @@
 	}, {
 		"name": ["particle physics", "high energy physics"],
 		"adj": ["particle physics", "high energy physics"],
-		"subject": ["quarks", "boson", "neutrinos", "charm", "spin", "muons"],
+		"subject": ["quarks", "bosons", "neutrinos", "charm", "spin", "muons"],
 		"keyword": ["mote", "particle", "charm", "spin", "radiate", "radiates"]
 	}, {
 		"name": ["acoustics"],

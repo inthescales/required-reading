@@ -229,12 +229,16 @@ def get_value(node):
         
     return cur
 
-generated = None
-while generated == None or failed:
-    failed = False
-    field = None
-    modifier = None
-    print "GENERATING"
-    generated = generate_title().title()
-
-print generated
+def generate_for_tweet():    
+    global field, failed, modifier
+    generated = None
+    while generated == None or failed:
+        failed = False
+        field = None
+        modifier = None
+        print "GENERATING"
+        generated = generate_title()
+        print generated
+        
+    return [random.choice(field["name"]), generated]
+    

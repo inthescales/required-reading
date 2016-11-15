@@ -14,20 +14,20 @@
 	}, {
 		"name": ["anatomy"],
 		"adj": ["anatomical"],
-		"subject": ["the human body", "human anatomy", "the body", "the human body", "the animal body"],
-		"keyword": ["body", "bodies", "anatomy", "structure", "carnal", "skeleton"],
+		"subject": ["the body", "organs", "bones", "muscles", "tissues", "the nervous system"],
+		"keyword": ["body", "bodies", "anatomy", "structure", "carnal", "skeleton", "flesh"],
 		"source": ["darwin-origin.txt"]
 	}, {
 		"name": ["human anatomy"],
 		"adj": ["anatomical"],
-		"subject": ["the human body", "human anatomy", "the body", "the human body"],
-		"keyword": ["body", "bodies", "anatomy", "structure", "carnal", "man", "mankind", "human", "skeleton"],
+		"subject": ["the human body", "organs", "bones", "muscles", "tissues", "the nervous system"],
+		"keyword": ["body", "bodies", "anatomy", "structure", "carnal", "man", "mankind", "human", "skeleton", "flesh"],
 		"source": ["darwin-origin.txt"]
 	}, {
 		"name": ["comparative anatomy"],
 		"adj": ["anatomical"],
-		"subject": ["the human body", "human anatomy", "the body", "the human body", "the animal body"],
-		"keyword": ["body", "bodies", "anatomy", "structure", "carnal", "compare", "comparison", "differ", "different", "difference", "skeleton"],
+		"subject": ["the human body", "the animal body", "function", "organs", "bones", "muscles", "tissues"],
+		"keyword": ["body", "bodies", "anatomy", "structure", "carnal", "compare", "comparison", "differ", "different", "difference", "skeleton", "flesh"],
 		"source": ["darwin-origin.txt"]
 	}, {
 		"name": ["biochemistry"],
@@ -248,12 +248,12 @@
 		"name": ["probability"],
 		"adj": ["probability"],
 		"subject": ["combinatorics", "discrete events", "continuous variables", "convergence"],
-		"keyword": ["code", "secret", "hidden"]
+		"keyword": ["probability", "chance", "chance"]
 	}, {
 		"name": ["cryptography"],
 		"adj": ["cryptographic"],
 		"subject": ["encryption", "ciphers", "codes", "authentication", "analysis"],
-		"keyword": ["probability", "chance", "chance"]
+		"keyword": ["code", "secret", "hidden"]
 	}, {
 		"name": ["statistics"],
 		"adj": ["statistical"],

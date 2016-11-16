@@ -13,9 +13,9 @@
 	"field": [
 		"<field:name>",
 		"<text:on> <field:name>",
-		"<texts:concepts> in <field:name>",
-		"<field:adjective> <texts:concepts>",
-		"<texts:introduction> to <field:name>",
+		"<text:concepts> in <field:name>",
+		"<field:adjective> <text:concepts>",
+		"<text:introduction> to <field:name>",
 		"<field:name> from <field:subject!> to <field:subject!>",
         "The <text:complete> <text:guide> to <field:name>"
 	],
@@ -59,7 +59,7 @@
 		"<title:something> <text:owns>",
 		"<title:something> is <text:good>",
 		"<title:something> is <text:unbelievable>",
-		"The <texts:big> <texts:guide> to <title:something>"
+		"The <text:big> <text:guide> to <title:something>"
 	]
 
 }

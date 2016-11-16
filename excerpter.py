@@ -71,10 +71,10 @@ def clean(initial_word, term):
         return re.match('\w+', word)
         
     def non_breaking_punc(char):
-        return char == ","
+        return char == "," or char == "-"
         
     def breaking_punc(char):
-        return char == "\"" or char == "(" or char == ")" or char == "." or char == ";" or char == ":" or char == "!" or char == "?"
+        return char == "\"" or char == "(" or char == ")" or char == "." or char == ";" or char == ":" or char == "!" or char == "?" or char == "'"
 
     for i in reversed(range(0, len(term))):
             
@@ -85,7 +85,7 @@ def clean(initial_word, term):
         
         # Clean initial punctuation
         first_char = word[0]
-        if first_char == "\"" or first_char == "(":
+        if first_char == "\"" or first_char == "(" or first_char == "[" or first_char == "{":
             if not is_first:
                 term = term[:i]
             else:

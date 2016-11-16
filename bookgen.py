@@ -60,23 +60,25 @@ def get_titles():
 
     return titles
     
-def get_keywords():
-    global field, modifier
+def get_keywords(field, modifier):
     
-    keywords = get_value("field:keyword")
+    keywords = []
+    
+    if "keyword" in field:
+        keywords = field["keyword"]
     
     if modifier and "keyword" in modifier:
         keywords.extend(get_value("modifier:keyword"))
-    
+
     return keywords
     
-def get_sources():
-    global field, modifier
+def get_sources(field, modifier):
+    global data
     
-    sources = get_value("fields:source")
+    sources = data["fields"]["source"]
     
     if "source" in field:
-        sources.extend(get_value("field:source"))
+        sources.extend(field["source"])
     
     if modifier and "source" in modifier:
         sources.extend(get_value("modifier:source"))
@@ -92,8 +94,22 @@ def get_field():
     else:
         field["name"] = [random.choice(field["name"])] # choose one name for the field
         
+    field["excerpts"] = get_excerpts(get_sources(field, modifier), get_keywords(field, modifier))
+          
     return field
+        
+def get_excerpts(sources, keywords):
+    global excerpts
     
+    available = []
+    for source in excerpts:
+        if source in sources:
+            for keyword in excerpts[source]:
+                if keyword in keywords:
+                    available.extend(excerpts[source][keyword])
+                    
+    return available
+
 def get_modifier():
     modifier = random.choice(get_value("fields:modifiers"))
     return modifier
@@ -183,7 +199,7 @@ def expand(node, data):
     return expansions
 
 def get_value(node):
-    global field, failed, modifier, excerpts
+    global field, failed, modifier
     node = node.split("#")[0]
     tokens = node.split(":")
     dict = None
@@ -200,15 +216,13 @@ def get_value(node):
         dict = modifier
     elif tokens[0] == "excerpt":
     
-        keyword = random.choice(get_keywords())
-        source = random.choice(get_sources())
-        print "Excerpt: " + keyword + " in " + source
-        
-        if excerpts and source in excerpts and keyword in excerpts[source] and len(excerpts[source][keyword]) > 0:
-            excerpt = random.choice(excerpts[source][keyword])
-            return [excerpt]
+
+        excerpts = field["excerpts"]
+        if excerpts:
+            return excerpts
         else:
             print "Failed: invalid source or keyword"
+            print field["excerpts"]
             failed = True
             return ["ERROR"]
         
@@ -222,7 +236,6 @@ def get_value(node):
         if token not in cur:
             failed = True
             print "DIDN'T FIND " + token + " IN " + node
-            print cur
             return ["ERROR"]
         else:
             cur = cur[token]
@@ -238,7 +251,6 @@ def generate_for_tweet():
         modifier = None
         print "GENERATING"
         generated = generate_title()
-        print generated
         
     return [random.choice(field["name"]), generated]
     

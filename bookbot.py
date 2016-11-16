@@ -11,7 +11,7 @@ def generate_tweet():
         generated = bookgen.generate_for_tweet()
         course = generated[0] + " " + str(randint(100, 999))
         book = generated[1]
-        cost = "$" + locale.format("%d", randint(99, 9999), grouping=True)
+        cost = "$" + locale.format("%d", randint(99, 999), grouping=True)
         text = course + "\n" + book + "\n" + cost
         
         if len(text) <= 140:

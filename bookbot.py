@@ -46,4 +46,4 @@ while True:
     if tweet:
         twitter.tweet(tweet)
         
-    time.sleep(10)
+    time.sleep(60 * 60)

@@ -82,6 +82,10 @@ def clean(initial_word, term):
         is_first = i == 0
         is_last = i == len(term)-1
         length = len(term)
+        tags = []
+        for i in 0..len(term):
+            tags[i] = tag(word)
+            
         
         # Clean initial punctuation
         first_char = word[0]
@@ -103,19 +107,21 @@ def clean(initial_word, term):
                 is_last = i == len(term)-1
                 
         # Check category
-        tagged = tag(word)
-        if not tagged:
+        if not tags[i]:
             continue
             
         tags = tagged[0]
-        if is_last and ('CC' in tags or 'IN' in tags or 'DT' in tags or 'PRP' in tags or 'PRP$' in tags or 'WDT' in tags or 'WP$' in tags or 'MD' in tags or 'TO' in tags or 'WRB' in tags or 'VB' in tags or 'VBZ' in tags or 'VBP' in tags or 'VBD' in tags or 'RB' in tags):
+        if is_last and ('CC' in tags[i] or 'IN' in tags[i] or 'DT' in tags[i] or 'PRP' in tags[i] or 'PRP$' in tags[i] or 'WDT' in tags[i] or 'WP$' in tags[i] or 'MD' in tags[i] or 'TO' in tags[i] or 'WRB' in tags[i] or 'VB' in tags[i] or 'VBZ' in tags[i] or 'VBP' in tags[i] or 'VBD' in tags[i] or 'RB' in tags[i]):
             term = term[:i]
             continue
             
-        if is_first and ('VB' in tags or 'VBZ' in tags or 'VBP' in tags or 'VBD' in tags):
+        if is_first and ('VB' in tags[i] or 'VBZ' in tags[i] or 'VBP' in tags[i] or 'VBD' in tags[i]):
             return None
     
     #print term
+    
+    if 'JJ' in tags[len(term)-1] and (term[len(term)-2] == "a" or term[len(term)-2] == "an"):
+        return None
     
     if len(term) >= 3 and initial_word in term:
         return term

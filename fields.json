@@ -1,5 +1,4 @@
 {
-
 	"fields": [{
 		"name": ["biology"],
 		"adjective": ["biological"],
@@ -51,13 +50,13 @@
 		"name": ["genetics"],
 		"adjective": ["genetic"],
 		"subject": ["genes", "mutation", "DNA", "reproduction", "evolution"],
-		"keyword": ["gene", "mutation", "change", "code"],
+		"keyword": ["gene", "mutation", "mutate", "encode", "change", "code"],
 		"source": ["darwin-origin.txt"]
 	}, {
 		"name": ["microbiology"],
 		"adjective": ["microbiological"],
 		"subject": ["microbes", "germs", "bacteria", "viruses", "cells"],
-		"keyword": ["cell", "cells", "germ", "germs"],
+		"keyword": ["cell", "cells", "germ", "germs", "small", "little"],
 		"source": ["darwin-origin.txt"]
 	}, {
 		"name": ["mycology"],
@@ -69,19 +68,19 @@
 		"name": ["nutrition"],
 		"adjective": ["nutritional"],
 		"subject": ["nutrients", "vitamins", "minerals", "fats", "carbohydrates", "health", "sickness"],
-		"keyword": ["food", "foods", "nourish", "nourishing", "nourishment", "meal"],
+		"keyword": ["food", "foods", "nourish", "nourishing", "nourishment", "meal", "meals"],
 		"source": ["darwin-origin.txt"]
 	}, {
 		"name": ["paleontology"],
 		"adjective": ["paleontological"],
 		"subject": ["bones", "fossils", "extinction", "dinosaurs"],
-		"keyword": ["bone", "bones", "ancient", "ancestors"],
+		"keyword": ["bone", "bones", "ancient", "ancestors", "fossil", "fossils", "fossilize", "fossilized"],
 		"source": ["darwin-origin.txt"]
 	}, {
 		"name": ["physiology"],
 		"adjective": ["physiological"],
 		"subject": ["body", "systems"],
-		"keyword": ["body", "carnal", "life", "living", "alive"],
+		"keyword": ["body", "bodies", "carnal", "life", "living", "alive"],
 		"source": ["darwin-origin.txt"]
 	}, {
 		"name": ["botany"],
@@ -93,7 +92,7 @@
 		"name": ["virology"],
 		"adjective": ["virological"],
 		"subject": ["viruses", "RNA", "infection"],
-		"keyword": ["virus", "infect", "infection", "disease"],
+		"keyword": ["virus", "viral", "infect", "infection", "infected", "diseased", "disease", "illness", "sickness"],
 		"source": ["darwin-origin.txt"]
 	}, {
 		"name": ["zoology"],
@@ -111,50 +110,50 @@
 		"name": ["herpetology"],
 		"adjective": ["herpetological"],
 		"subject": ["snakes", "reptiles", "lizards"],
-		"keyword": ["snake", "snakes", "serpent", "serpents", "lizard", "lizards", "scale", "scales"],
+		"keyword": ["snake", "snakes", "serpent", "serpents", "lizard", "lizards", "scale", "scales", "slither", "slithers", "slithering"],
 		"source": ["darwin-origin.txt"]
 	}, {
 		"name": ["cryptozoology"],
 		"adjective": ["cryptozoological"],
 		"subject": ["lake beasts", "humanoids", "extraterrestrials", "the unknown"],
-		"keyword": ["strange", "weird", "secret", "beast", "monster"],
+		"keyword": ["strange", "weird", "secret", "beast", "monster", "creature", "beasts", "monsters", "creatures"],
 		"source": ["darwin-origin.txt"]
 	}, {
 		"name": ["chemistry"],
 		"adjective": ["chemical"],
 		"subject": ["matter", "energy", "reactions", "molecules", "change"],
-		"keyword": ["chemical", "substance", "reaction", "change", "changes"]
+		"keyword": ["chemical", "chemicals", "substance", "element", "elements", "reaction", "change", "changes"]
 	}, {
 		"name": ["nanotechnology"],
 		"adjective": ["nanotechnological"],
 		"subject": ["atoms", "scale", "assembly", "materials"],
-		"keyword": ["small", "tiny", "little", "strong", "power"]
+		"keyword": ["small", "tiny", "little", "strong", "power", "structure", "particle", "mote", "motes", "particles", "smallest"]
 	}, {
 		"name": ["pharmacology"],
 		"adjective": ["pharmacological"],
 		"subject": ["drugs", "medicine", "organisms"],
-		"keyword": ["drug", "drugs", "medicine", "medicinal", "chemical"]
+		"keyword": ["drug", "drugs", "medicine", "medicines", "medicinal", "chemical", "tincture", "tinctures"]
 	}, {
 		"name": ["polymer chemistry"],
 		"adjective": ["polymer-chemical"],
 		"subject": ["materials", "polymers", "molecules"],
-		"keyword": ["fabric", "weave", "woven"]
+		"keyword": ["fabric", "weave", "woven", "chemical", "chemicals", "fabrics", "polymer", "polymers", "material", "materials"]
 	}, {
 		"name": ["radio chemistry"],
 		"adjective": ["radio-chemical"],
 		"subject": ["radiation", "rays", "decay"],
-		"keyword": ["radiate", "radiant", "decay"]
+		"keyword": ["radiate", "radiant", "decay", "radiation", "ray", "rays", "expire"]
 	}, {
 		"name": ["flavor science"],
 		"adjective": ["flavor science"],
 		"subject": ["taste", "flavor", "molecules", "scent", "sense", "fabrication", "imitation"],
-		"keyword": ["taste", "tastes", "flavor", "flavors", "scent", "scents", "smell"]
+		"keyword": ["taste", "tastes", "flavor", "flavors", "scent", "scents", "smell", "smells"]
 	}, {
 		"name": ["geology"],
 		"adjective": ["geological"],
 		"prefix": ["geo"],
-		"subject": ["rocks", "stones", "minerals"],
-		"keyword": ["stone", "earth", "rock", "soil", "mountain"],
+		"subject": ["rocks", "stones", "minerals", "strata"],
+		"keyword": ["stone", "stones", "earth", "rock", "rocks", "soil", "mountain", "mountains"],
 		"verb": ["identify"],
 		"gerund": ["identifying"],
 		"practice": ["the identification of"],
@@ -168,7 +167,7 @@
 		"name": ["geodesy", "geodetics"],
 		"adjective": ["geodesical", "geodetical"],
 		"subject": ["the earth", "metrics", "measurement", "demarcation", "change"],
-		"keyword": ["earth", "pole", "measure", "measurement"]
+		"keyword": ["earth", "pole", "poles", "measure", "measurement"]
 	}, {
 		"name": ["geochemistry"],
 		"adjective": ["geochemical"],
@@ -178,12 +177,12 @@
 		"name": ["geography"],
 		"adjective": ["geographical"],
 		"subject": ["the earth", "water systems", "landmasses", "climate"],
-		"keyword": ["earth", "land", "border"]
+		"keyword": ["earth", "land", "border", "borders", "lands", "zone", "zones"]
 	}, {
 		"name": ["geophysics"],
 		"adjective": ["geophysical"],
 		"subject": ["the earth", "gravity", "tides", "tectonics", "the atmosphere"],
-		"keyword": ["earth", "planet", "pole"]
+		"keyword": ["earth", "planet", "pole", "poles", "motion", "movement"]
 	}, {
 		"name": ["hydrology"],
 		"adjective": ["hydrological"],
@@ -198,7 +197,7 @@
 		"name": ["mineralogy"],
 		"adjective": ["mineralogical"],
 		"subject": ["crystals", "molecules", "formation"],
-		"keyword": ["crystal", "gem", "stone", "stones", "gems", "crystals", "crystallize"]
+		"keyword": ["crystal", "crystals", "crystallize", "gem", "gems", "stone", "stones"]
 	}, {
 		"name": ["speleology"],
 		"adjective": ["speleological"],
@@ -208,7 +207,7 @@
 		"name": ["volcanology"],
 		"adjective": ["volcanological"],
 		"subject": ["lava", "magma", "eruption", "formation", "prediction"],
-		"keyword": ["volcano", "eruption", "erupt", "smoke", "explosion"]
+		"keyword": ["volcano", "volcanoes", "eruption", "eruptions", "erupt", "smoke", "explosion", "explosions", "fire", "fires", "flame", "flames", "vulcan"]
 	}, {
 		"name": ["tectonics"],
 		"adjective": ["tectonic"],
@@ -218,17 +217,17 @@
 		"name": ["astronomy"],
 		"adjective": ["astronomical"],
 		"subject": ["stars", "planets", "nebulas", "the milky way", "the universe", "radiation"],
-		"keyword": ["star", "stars", "heaven", "heavens", "galaxy", "constellation", "constellations"]
+		"keyword": ["star", "stars", "heaven", "heavens", "galaxy", "galaxies", "constellation", "constellations"]
 	}, {
 		"name": ["astrophysics"],
 		"adjective": ["astrophysical"],
 		"subject": ["stars", "radiation", "gravity", "black holes", "white dwarfs", "red giants"],
-		"keyword": ["stars", "heavens", "ray", "rays"]
+		"keyword": ["star", "stars", "heavens", "ray", "rays", "void"]
 	}, {
 		"name": ["mathematics", "math"],
 		"adjective": ["mathematical"],
 		"subject": ["numbers", "operations", "sets", "logic", "proof", "probability"],
-		"keyword": ["number", "quantity", "amount", "numbers", "sum"]
+		"keyword": ["number", "quantity", "amount", "numbers", "sum", "calculate", "calculation"]
 	}, {
 		"name": ["modal logic"],
 		"adjective": ["modal logic"],
@@ -238,22 +237,22 @@
 		"name": ["algebra"],
 		"adjective": ["algebraic"],
 		"subject": ["groups", "rings", "fields", "abstraction"],
-		"keyword": ["broken", "reunion", "restoration", "unknown", "value"]
+		"keyword": ["broken", "reunion", "restore", "restoration", "unknown", "value"]
 	}, {
 		"name": ["category theory"],
 		"adjective": ["category theory"],
 		"subject": ["categories", "functors", "topology"],
-		"keyword": ["category", "theory", "group"]
+		"keyword": ["category", "categories", "theory", "theories", "group", "groups"]
 	}, {
 		"name": ["probability"],
 		"adjective": ["probability"],
 		"subject": ["combinatorics", "discrete events", "continuous variables", "convergence"],
-		"keyword": ["probability", "chance", "chance"]
+		"keyword": ["probability", "chance", "chances", "luck", "lucky"]
 	}, {
 		"name": ["cryptography"],
 		"adjective": ["cryptographic"],
 		"subject": ["encryption", "ciphers", "codes", "authentication", "cryptanalysis"],
-		"keyword": ["code", "secret", "hidden"]
+		"keyword": ["code", "secret", "secrets", "hidden", "unknown", "encrypt", "encrypted", "decrypt"]
 	}, {
 		"name": ["statistics"],
 		"adjective": ["statistical"],
@@ -283,12 +282,12 @@
 		"name": ["calculus"],
 		"adjective": ["calculus"],
 		"subject": ["analysis", "limits", "theorems"],
-		"keyword": ["calculus", "limit", "limits", "limiting"]
+		"keyword": ["calculus", "calculate", "calculation", "calculations", "limit", "limits", "limiting"]
 	}, {
 		"name": ["quantum mechanics"],
 		"adjective": ["quantum"],
 		"subject": ["fields", "atoms", "photons ", "superposition"],
-		"keyword": ["strange", "position", "momentum", "movement", "distance"]
+		"keyword": ["strange", "position", "momentum", "movement", "distance", "linked", "link", "entangle", "entangled"]
 	}, {
 		"name": ["physics"],
 		"adjective": ["physics"],
@@ -323,12 +322,12 @@
 		"name": ["acoustics"],
 		"adjective": ["acoustic"],
 		"subject": ["sound", "waves", "propagation", "pressure", "frequency"],
-		"keyword": ["sound", "wave", "voice", "loud", "hear"]
+		"keyword": ["sound", "sounds", "wave", "voice", "voices", "loud", "loudest", "hear", "hears"]
 	}, {
 		"name": ["thermodynamics"],
 		"adjective": ["thermodynamic"],
 		"subject": ["heat", "energy", "phase change", "matter", "mechanics", "equilibrium"],
-		"keyword": ["heat", "cold", "boil", "freeze", "temperature", "temperate"]
+		"keyword": ["heat", "cold", "boil", "boiling", "freeze", "freezing", "frozen", "temperature", "temperate"]
 	}, {
 		"name": ["theoretical physics"],
 		"adjective": ["theoretical physics"],
@@ -343,12 +342,12 @@
 		"name": ["food science"],
 		"adjective": ["food science"],
 		"subject": ["food", "nutrition", "public health", "processing", "extraction", "production"],
-		"keyword": ["food", "nourish", "meal", "nourishment"]
+		"keyword": ["food", "nourish", "nourishment", "meal"]
 	}, {
 		"name": ["computer science"],
 		"adjective": ["computer science"],
 		"subject": ["data", "types", "languages", "theory", "algorithms"],
-		"keyword": ["machine", "computer", "language", "code"]
+		"keyword": ["machine", "machines", "computer", "language", "languages", "code", "device", "devices"]
 	}, {
 		"name": ["algorithms"],
 		"adjective": ["algorithms"],
@@ -363,12 +362,12 @@
 		"name": ["computation theory", "theory of computation"],
 		"adjective": ["computation theory", "computation-theoretical"],
 		"subject": ["automata", "computability", "proof", "formal languages", "complexity", "models"],
-		"keyword": ["computer", "theory", "complex"]
+		"keyword": ["computer", "compute", "theory", "theories", "complex", "complexity", "intricate", "intricacy"]
 	}, {
 		"name": ["chemical engineering"],
 		"adjective": ["chemical engineering"],
 		"subject": ["polymers", "reactions", "processes"],
-		"keyword": ["create", "chemical", "engineer"]
+		"keyword": ["create", "chemical", "chemicals", "chemistry", "engineer", "engineered"]
 	}, {
 		"name": ["civil engineering"],
 		"adjective": ["civil engineering"],
@@ -393,7 +392,7 @@
 		"name": ["medicine"],
 		"adjective": ["medical"],
 		"subject": ["health", "prevention", "pharmacology", "diagnosis", "treatment"],
-		"keyword": ["heal", "health", "cure", "doctor", "medicine", "medicinal", "healer"]
+		"keyword": ["heal", "health", "cure", "cures", "doctor", "doctors", "medicine", "medicinal", "healer"]
 	}, {
 		"name": ["dentistry"],
 		"adjective": ["dental"],
@@ -529,7 +528,7 @@
 		"adjective": ["American history"],
 		"subject": ["colonialism", "manifest destiny", "capitalism", "the founding fathers", "washington", "democracy"],
 		"keyword": ["history", "washington", "america", "american", "columbia", "columbian", "united", "unite"],
-        "source": ["declaration-of-independence.txt", "declaration-of-independence.txt", "declaration-of-independence.txt"]
+		"source": ["declaration-of-independence.txt", "declaration-of-independence.txt", "declaration-of-independence.txt"]
 	}, {
 		"name": ["ancient history"],
 		"adjective": ["ancient history"],
@@ -629,12 +628,14 @@
 		"name": ["corporate law"],
 		"adjective": ["corporate law"],
 		"subject": ["corporations", "shareholders", "consumers", "the environment", "communities", "liability"],
-		"keyword": ["law", "laws", "legal", "corporation", "incorporate", "incorporation", "body", "bodies"]
+		"keyword": ["law", "laws", "legal", "corporation", "incorporate", "incorporation", "body", "bodies"],
+		"blacklist": ["jew", "jewish", "hebrew", "israel", "semit"]
 	}, {
 		"name": ["tax law"],
 		"adjective": ["tax law"],
 		"subject": ["taxes", "income", "wealth", "estates", "capital gains", "labor", "evasion", "efficiency", "incentives"],
-		"keyword": ["law", "laws", "legal", "tax", "taxes", "tariff", "tariffs", "gold", "wealth", "money", "collect"]
+		"keyword": ["law", "laws", "legal", "tax", "taxes", "tariff", "tariffs", "gold", "wealth", "money", "collect"],
+		"blacklist": ["jew", "jewish", "hebrew", "israel", "semit"]
 	}, {
 		"name": ["political science"],
 		"adjective": ["political science"],
@@ -669,7 +670,8 @@
 		"name": ["critical race theory"],
 		"adjective": ["critical race theory"],
 		"subject": ["power", "white supremacy", "oppression", "resistance", "community", "injustice"],
-		"keyword": ["race", "races", "injustice", "oppression", "oppress", "dominate", "dominance", "white", "black"]
+		"keyword": ["race", "races", "injustice", "oppression", "oppress", "dominate", "dominance", "white", "black"],
+		"blacklist": ["savage", "lazy", "lazier", "laziest", "stupid", "wild"]
 	}, {
 		"name": ["sociolinguistics"],
 		"adjective": ["sociolinguistic"],

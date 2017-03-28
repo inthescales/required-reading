@@ -37,13 +37,32 @@ if data is None:
 def generate_title():
     global field
     field = get_field()
-    print "field = " + field["name"][0]
     
     title_choices = get_titles()
     title = random.choice(title_choices)
     
     expand_data = {"taken": {}}
-    return random.choice( expand(title, expand_data) )
+    titles = expand(title, expand_data)
+    
+    if "blacklist" in field:
+        blacklist = field["blacklist"]
+        titles = filter(titles, blacklist)
+    
+    if titles:
+        return random.choice(titles)
+    else:
+        return None
+    
+def filter(titles, blacklist):
+    accepted = titles
+    for title in titles:
+        caught = False
+        for word in blacklist:
+            if word in title:
+                accepted.remove(title)
+                break
+                
+    return accepted
     
 def get_titles():
     global field, modifier
@@ -252,7 +271,6 @@ def generate_for_tweet():
         failed = False
         field = None
         modifier = None
-        print "GENERATING"
         generated = generate_title()
         
     return [random.choice(field["name"]), generated]
@@ -260,13 +278,15 @@ def generate_for_tweet():
 def write_tweet():
     valid = False
     while not valid:
-        generated = bookgen.generate_for_tweet()
-        course = generated[0].title() + " " + str(randint(100, 999))
+        generated = generate_for_tweet()
+        course = generated[0].title() + " " + str(random.randint(100, 999))
         book = generated[1].title()
-        cost = "$" + locale.format("%d", randint(99, 999), grouping=True)
+        cost = "$" + locale.format("%d", random.randint(99, 999), grouping=True)
         text = course + "\n" + book + "\n" + cost
         
         if len(text) <= 140:
             valid = True
 
     return text
+    
+print generate_for_tweet()

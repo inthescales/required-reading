@@ -4,6 +4,9 @@ import re
 import sys
 from os import listdir
 from os.path import isfile, join
+import locale
+
+locale.setlocale(locale.LC_ALL, '')
 
 data = {}
 excerpts = {}
@@ -253,4 +256,17 @@ def generate_for_tweet():
         generated = generate_title()
         
     return [random.choice(field["name"]), generated]
-    
+
+def write_tweet():
+    valid = False
+    while not valid:
+        generated = bookgen.generate_for_tweet()
+        course = generated[0].title() + " " + str(randint(100, 999))
+        book = generated[1].title()
+        cost = "$" + locale.format("%d", randint(99, 999), grouping=True)
+        text = course + "\n" + book + "\n" + cost
+        
+        if len(text) <= 140:
+            valid = True
+
+    return text

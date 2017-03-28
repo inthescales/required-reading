@@ -55,8 +55,6 @@ def find(keywords, file):
     return finds
 
 def clean(initial_word, term):
-   
-    #print term
     
     is_last = True
     is_first = False
@@ -83,8 +81,8 @@ def clean(initial_word, term):
         is_last = i == len(term)-1
         length = len(term)
         tags = []
-        for i in 0..len(term):
-            tags[i] = tag(word)
+        for k in range(0, len(term)):
+            tags.append( tag(term[k]))
             
         
         # Clean initial punctuation
@@ -100,9 +98,10 @@ def clean(initial_word, term):
         for j in reversed(range(0, len(word))):
             cur = word[j]
             if non_breaking_punc(cur):
-                term[i] = word = word[:-1]
+                if j == len(word)-1:
+                    term[i] = word = word[:j]
             elif breaking_punc(cur):
-                term[i] = word = word[:-1]
+                term[i] = word = word[:j]
                 term = term[:i+1]
                 is_last = i == len(term)-1
                 
@@ -110,18 +109,16 @@ def clean(initial_word, term):
         if not tags[i]:
             continue
             
-        tags = tagged[0]
-        if is_last and ('CC' in tags[i] or 'IN' in tags[i] or 'DT' in tags[i] or 'PRP' in tags[i] or 'PRP$' in tags[i] or 'WDT' in tags[i] or 'WP$' in tags[i] or 'MD' in tags[i] or 'TO' in tags[i] or 'WRB' in tags[i] or 'VB' in tags[i] or 'VBZ' in tags[i] or 'VBP' in tags[i] or 'VBD' in tags[i] or 'RB' in tags[i]):
+        type = tags[i][0]
+        if is_last and ('CC' in type or 'IN' in type or 'DT' in type or 'PRP' in type or 'PRP$' in type or 'WDT' in type or 'WP$' in type or 'MD' in type or 'TO' in type or 'WRB' in type or 'VB' in type or 'VBZ' in type or 'VBP' in type or 'VBD' in type or 'RB' in type):
             term = term[:i]
             continue
             
-        if is_first and ('VB' in tags[i] or 'VBZ' in tags[i] or 'VBP' in tags[i] or 'VBD' in tags[i]):
+        if is_last and ('JJ' in type and (term[len(term)-2] == "a" or term[len(term)-2] == "an")):
             return None
-    
-    #print term
-    
-    if 'JJ' in tags[len(term)-1] and (term[len(term)-2] == "a" or term[len(term)-2] == "an"):
-        return None
+            
+        if is_first and ('VB' in type or 'VBZ' in type or 'VBP' in type or 'VBD' in type):
+            return None
     
     if len(term) >= 3 and initial_word in term:
         return term

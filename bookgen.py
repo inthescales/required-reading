@@ -288,5 +288,3 @@ def write_tweet():
             valid = True
 
     return text
-    
-print generate_for_tweet()

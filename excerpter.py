@@ -72,7 +72,10 @@ def clean(initial_word, term):
         return char == "," or char == "-"
         
     def breaking_punc(char):
-        return char == "\"" or char == "(" or char == ")" or char == "." or char == ";" or char == ":" or char == "!" or char == "?" or char == "'"
+        return char == "\"" or char == "(" or char == ")" or char == "." or char == ";" or char == ":" or char == "!" or char == "?"
+        
+    def final_breaking(char):
+        return char == "'"
 
     for i in reversed(range(0, len(term))):
             
@@ -100,7 +103,7 @@ def clean(initial_word, term):
             if non_breaking_punc(cur):
                 if j == len(word)-1:
                     term[i] = word = word[:j]
-            elif breaking_punc(cur):
+            elif breaking_punc(cur) or (final_breaking(cur) and j == len(word)-1):
                 term[i] = word = word[:j]
                 term = term[:i+1]
                 is_last = i == len(term)-1

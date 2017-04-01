@@ -13,14 +13,15 @@ excerpts = {}
 field = None
 modifier = None
 failed = False
+contents_path = './contents/'
 
-with open('titles.json') as data_file:
+with open(contents_path + 'titles.json') as data_file:
     data["title"] = json.load(data_file)
 
-with open('fields.json') as data_file:
+with open(contents_path + 'fields.json') as data_file:
     data["fields"] = json.load(data_file)
 
-with open('texts.json') as data_file:
+with open(contents_path + 'texts.json') as data_file:
     data["text"] = json.load(data_file)
 
 path = '.'

@@ -2,7 +2,7 @@ import bookgen
 from botbuddy import BotBuddy
 
 credentials = {
-    BotBuddy.creds_file_key = "creds.json"
+    BotBuddy.creds_file_key : "creds.json"
 }
     
 body = BotBuddy()

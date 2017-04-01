@@ -5,6 +5,6 @@ credentials = {
     BotBuddy.creds_file_key : "creds.json"
 }
     
-body = BotBuddy()
-body.setup(bookgen.write_tweet, interval="1h", retry=True, credentials=credentials)
-body.launch()
+buddy = BotBuddy()
+buddy.setup(bookgen.write_tweet, interval="1h", retry=True, credentials=credentials)
+buddy.launch()

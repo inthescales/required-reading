@@ -1,14 +1,14 @@
 import bookgen
-from botbody import BotBody
+from BotBuddy import BotBuddy
 
 credentials = {
     
-    BotBody.consumer_key_key : "W8mx3eg7mA4J8pZjSE3gkPplN",
-    BotBody.consumer_secret_key : "iHh2ZWXcTrRtbToTV8q1QdkdsEZ9KIjsN7RgonfzOsyheyZkjt",
-    BotBody.access_token_key : "798422658425778176-at7rlU1vIugbbZ3hvvVIVLXvV93tNKB",
-    BotBody.access_token_secret_key : "N7ZlfS2yVI3JFNsO0osPz6VewV4KVXS6O0mhy9nCvFHKi"
+    BotBuddy.consumer_key_key : "W8mx3eg7mA4J8pZjSE3gkPplN",
+    BotBuddy.consumer_secret_key : "iHh2ZWXcTrRtbToTV8q1QdkdsEZ9KIjsN7RgonfzOsyheyZkjt",
+    BotBuddy.access_token_key : "798422658425778176-at7rlU1vIugbbZ3hvvVIVLXvV93tNKB",
+    BotBuddy.access_token_secret_key : "N7ZlfS2yVI3JFNsO0osPz6VewV4KVXS6O0mhy9nCvFHKi"
 }
     
-body = BotBody()
+body = BotBuddy()
 body.setup(bookgen.write_tweet, interval="1h", retry=True, credentials=credentials)
 body.launch()

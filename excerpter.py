@@ -6,7 +6,7 @@ from pattern.en import tag
 field_data = None
 keywords = []
 
-with open ('fields.json', 'r') as keyfile:
+with open ('contents/fields.json', 'r') as keyfile:
     field_data = json.load(keyfile)
     
 for field in field_data["fields"]:

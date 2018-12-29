@@ -99,7 +99,6 @@ def get_sources(field, modifier):
     global data
     
     sources = data["fields"]["source"]
-    
     if "source" in field:
         sources.extend(field["source"])
     

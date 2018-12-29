@@ -16,9 +16,9 @@
 	"owns": ["rules", "rocks", "is fun", "is <text:good>"],
 	"good": ["fun", "great", "amazing", "incredible"],
 	"unbelievable": ["incredible", "amazing", "unbelievable"],
-    "adjective": ["<text:good>", "<text:unbelievable>"],
-    "how_to": ["How To"],
-    "text": ["text", "treatise"],
-    "concepts": ["concepts", "topics", "themes", "methods"],
-    "introduction": ["introduction"]
+	"adjective": ["<text:good>", "<text:unbelievable>"],
+	"how_to": ["How To"],
+	"text": ["text", "treatise"],
+	"concepts": ["concepts", "topics", "themes", "methods"],
+	"introduction": ["introduction"]
 }

@@ -1,2 +1,2 @@
 path=$1
-echo "$path/gorgarspeaks.py $path/gorgarbot.py $path/scripts"
+echo "$path/bookgen.py $path/bookbot.py $path/scripts"

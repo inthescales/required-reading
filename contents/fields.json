@@ -277,7 +277,7 @@
 	}, {
 		"name": ["number theory"],
 		"adjective": ["number theory"],
-		"subject": ["primes", "integers", "rational numbers", "arithmetic", "analysis ", "real numbers "],
+		"subject": ["primes", "integers", "rational numbers", "arithmetic", "analysis", "real numbers"],
 		"keyword": ["number", "numbers", "arithmetic", "sum"]
 	}, {
 		"name": ["trigonometry"],
@@ -338,7 +338,7 @@
 		"name": ["theoretical physics"],
 		"adjective": ["theoretical physics"],
 		"subject": ["models", "relativity", "strings", "controversy"],
-		"keyword": ["theory", "philosophy", "idea", "string", "dream"]
+		"keyword": ["theory", "theories", "philosophy", "philosophies", "idea", "ideas", "string", "string", "particle", "particles"]
 	}, {
 		"name": ["agronomy"],
 		"adjective": ["agronomical"],
@@ -569,12 +569,12 @@
 		"name": ["philosophy"],
 		"adjective": ["philosophical"],
 		"subject": ["ideas", "argument", "dialectic", "the mind", "law", "the nature of existence"],
-		"keyword": ["philosophy", "philosopher", "argue", "argument", "investigate", "pursue", "wisdom", "pursuit", "idea"]
+		"keyword": ["philosophy", "philosopher", "philosophies", "argue", "argument", "investigate", "investigation", "pursue", "wisdom", "wise", "pursuit", "idea", "ideas"]
 	}, {
 		"name": ["epistemology"],
 		"adjective": ["epistemological"],
 		"subject": ["knowledge", "proof", "reasoning", "justification"],
-		"keyword": ["truth", "true", "knowledge", "know", "wisdom", "proof", "evidence"]
+		"keyword": ["truth", "true", "truer", "truest", "knowledge", "know", "known", "knowing", "wisdom", "proof", "evidence"]
 	}, {
 		"name": ["ethics"],
 		"adjective": ["ethical"],

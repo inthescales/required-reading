@@ -6,5 +6,5 @@ credentials = {
 }
     
 buddy = BotBuddy()
-buddy.setup(bookgen.write_tweet, interval="1h", retry=True, credentials=credentials)
-buddy.launch()
+buddy.setup(bookgen.write_tweet, retry=True, credentials=credentials)
+buddy.post()

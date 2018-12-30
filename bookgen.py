@@ -5,6 +5,7 @@ import sys
 from os import listdir
 from os.path import isfile, join
 import locale
+import string
 
 locale.setlocale(locale.LC_ALL, '')
 
@@ -28,11 +29,12 @@ path = '.'
 excerpts_path = './excerpts/'
 excerpt_files = [f for f in listdir(excerpts_path) if isfile(join(excerpts_path, f))]
 for file in excerpt_files:
-    with open(excerpts_path + file) as data_file:
-        excerpts[file] = json.load(data_file)
+    if file[0] != '.':
+        with open(excerpts_path + file) as data_file:
+            excerpts[file] = json.load(data_file)
     
 if data is None:
-    print "Error: missing data"
+    print("Error: missing data")
     sys.exit()
     
 def generate_title():
@@ -99,11 +101,12 @@ def get_sources(field, modifier):
     global data
     
     sources = data["fields"]["source"]
+
     if "source" in field:
         sources.extend(field["source"])
     
     if modifier and "source" in modifier:
-        sources.extend(get_value("modifier:source"))
+        sources = get_value("modifier:source")
     
     return sources
     
@@ -243,8 +246,8 @@ def get_value(node):
         if excerpts:
             return excerpts
         else:
-            print "Failed: invalid source or keyword"
-            print field["excerpts"]
+            print("Failed: invalid source or keyword")
+            print(field["excerpts"])
             failed = True
             return ["ERROR"]
         
@@ -257,7 +260,7 @@ def get_value(node):
 
         if token not in cur:
             failed = True
-            print "DIDN'T FIND " + token + " IN " + node
+            print("DIDN'T FIND " + token + " IN " + node)
             return ["ERROR"]
         else:
             cur = cur[token]
@@ -279,8 +282,8 @@ def write_tweet():
     valid = False
     while not valid:
         generated = generate_for_tweet()
-        course = generated[0].title() + " " + str(random.randint(100, 999))
-        book = generated[1].title()
+        course = string.capwords(generated[0]) + " " + str(random.randint(100, 999))
+        book = string.capwords(generated[1])
         cost = "$" + locale.format("%d", random.randint(99, 999), grouping=True)
         text = course + "\n" + book + "\n" + cost
         
@@ -288,3 +291,12 @@ def write_tweet():
             valid = True
 
     return text
+
+def test():
+
+    for i in range(0, 10):
+        entry = write_tweet()
+        print(entry)
+        print("")
+
+test()

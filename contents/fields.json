@@ -32,18 +32,18 @@
 		"name": ["biochemistry"],
 		"adjective": ["biochemical"],
 		"subject": ["enzymes", "immune response", "genes"],
-		"keyword": ["gene", "ichor"],
+		"keyword": ["gene", "genes", "genetic", "ichor", "chemical", "chemicals", "chemistry"],
 		"source": ["darwin-origin.txt"]
 	}, {
 		"name": ["biotechnology"],
 		"adjective": ["biotechnological"],
 		"subject": ["bioengineering", "cloning", "genetics", "DNA", "tissues"],
-		"keyword": ["clone", "cloning", "harness", "yoke", "DNA", "gene"],
+		"keyword": ["clone", "clones", "cloning", "DNA", "gene", "genes", "graft", "grafts", "grafting", "breed", "breeds", "breeding"],
 		"source": ["darwin-origin.txt"]
 	}, {
 		"name": ["ecology"],
 		"adjective": ["ecological"],
-		"subject": ["ecosystems", "the environment", "biomes"],
+		"subject": ["ecosystems", "the environment", "biomes", "populations", "climate"],
 		"keyword": ["land", "system", "chain", "environ", "environment", "population"],
 		"source": ["darwin-origin.txt", "darwin-origin.txt", "darwin-origin.txt"]
 	}, {
@@ -62,7 +62,7 @@
 		"name": ["mycology"],
 		"adjective": ["mycological"],
 		"subject": ["fungi", "mushrooms", "slime mold", "mildew", "lichen", "spores"],
-		"keyword": ["mushroom", "fungus", "mold", "lichen", "spores", "spore"],
+		"keyword": ["mushroom", "mushrooms", "fungus", "fungi", "mold", "molds", "lichen", "lichens", "spore", "spores", "grow", "growing", "growth", "grows"],
 		"source": ["darwin-origin.txt"]
 	}, {
 		"name": ["nutrition"],
@@ -113,6 +113,12 @@
 		"keyword": ["snake", "snakes", "serpent", "serpents", "lizard", "lizards", "scale", "scales", "slither", "slithers", "slithering"],
 		"source": ["darwin-origin.txt"]
 	}, {
+		"name": ["ornithology"],
+		"adjective": ["ornithological"],
+		"subject": ["courtship behaviors", "migration", "nesting", "diets", "calls"],
+		"keyword": ["bird", "birds", "wing", "wings", "beak", "beaks", "talon", "talons", "nest", "nests", "fly", "flies", "flight", "flying", "soar", "soars", "soaring", "egg", "eggs"],
+		"source": ["darwin-origin.txt"]
+	},{
 		"name": ["cryptozoology"],
 		"adjective": ["cryptozoological"],
 		"subject": ["lake beasts", "humanoids", "extraterrestrials", "the unknown"],
@@ -202,7 +208,7 @@
 		"name": ["speleology"],
 		"adjective": ["speleological"],
 		"subject": ["caves", "caverns", "tunnels", "cartography"],
-		"keyword": ["cave", "cavern", "caverns", "tartarus", "subterranean", "lost", "hidden", "hades"]
+		"keyword": ["cave", "caves", "cavern", "caverns", "tartarus", "subterranean", "hidden", "hades", "depth", "hollow", "hollows"]
 	}, {
 		"name": ["volcanology"],
 		"adjective": ["volcanological"],
@@ -312,17 +318,17 @@
 		"name": ["nuclear physics", "atomic physics"],
 		"adjective": ["nuclear physics", "atomic physics"],
 		"subject": ["particles", "nuclei", "decay", "fission", "fusion", "radiation"],
-		"keyword": ["mote", "particle", "split", "join", "radiate", "radiates", "radiant"]
+		"keyword": ["mote", "motes", "particle", "particles", "split", "splits", "splitting", "join", "joins", "joining", "fuse", "fusing", "fuses", "radiate", "radiates", "radiant", "radiation"]
 	}, {
 		"name": ["particle physics", "high energy physics"],
 		"adjective": ["particle physics", "high energy physics"],
 		"subject": ["quarks", "bosons", "neutrinos", "charm", "spin", "muons"],
-		"keyword": ["mote", "particle", "charm", "spin", "radiate", "radiates"]
+		"keyword": ["mote", "motes", "particle", "particles", "spin", "spins", "spinning", "radiate", "radiant", "radiating", "radiation", "speck", "specks"]
 	}, {
 		"name": ["acoustics"],
 		"adjective": ["acoustic"],
 		"subject": ["sound", "waves", "propagation", "pressure", "frequency"],
-		"keyword": ["sound", "sounds", "wave", "voice", "voices", "loud", "loudest", "hear", "hears"]
+		"keyword": ["sound", "sounds", "wave", "waves", "voice", "voices", "loud", "loudest", "louder", "hear", "hears"]
 	}, {
 		"name": ["thermodynamics"],
 		"adjective": ["thermodynamic"],
@@ -427,27 +433,27 @@
 		"name": ["prosthetics"],
 		"adjective": ["prosthetics"],
 		"subject": ["limbs", "joints", "materials", "robotics"],
-		"keyword": ["limb", "body", "whole", "restore", "limbs", "wholeness", "restoration", "hand", "arm", "leg"]
+		"keyword": ["limb", "limbs", "body", "restore", "restoration", "hand", "hands", "arm", "arms", "leg", "legs", "tool", "tools", "enable", "enables", "enabling"]
 	}, {
 		"name": ["psychiatry"],
 		"adjective": ["psychiatric"],
 		"subject": ["diagnosis", "behavior", "mood", "cognition", "perception", "abnormalities"],
-		"keyword": ["mind", "sane", "sanity", "health", "mental"]
+		"keyword": ["mind", "minds", "mental", "mentality", "sane", "sanity", "health", "healthy", "psyche", "psychic", "psyches"]
 	}, {
 		"name": ["psychology"],
 		"adjective": ["psychology"],
 		"subject": ["mind", "behavior", "the unconscious", "socialization", "cognitive function"],
-		"keyword": ["mind", "mental", "conscious", "consciousness", "unconscious", "dream", "relationship"]
+		"keyword": ["mind", "minds", "mental", "thought", "thoughts", "conscious", "consciousness", "unconscious", "dream", "dreams", "relationship", "relationships", "psyche", "psyches", "psychic"]
 	}, {
 		"name": ["social psychology"],
 		"adjective": ["social psychology"],
 		"subject": ["self-concept", "social cognition", "influence", "group dynamics", "attitudes"],
-		"keyword": ["mind", "community", "communities", "interaction", "group", "groups", "crowd", "crowds"]
+		"keyword": ["mind", "minds", "community", "communities", "interaction", "group", "groups", "crowd", "crowds", "psyche"]
 	}, {
 		"name": ["cognitive science"],
 		"adjective": ["cognitive science"],
 		"subject": ["cognition", "memory", "perception", "attention", "reasoning", "emotion", "representation"],
-		"keyword": ["mind", "minds", "thought", "thoughts", "brain", "brains", "reason", "emotion", "memory"]
+		"keyword": ["mind", "minds", "thought", "thoughts", "brain", "brains", "reason", "emotion", "memory", "psyche"]
 	}, {
 		"name": ["performing arts"],
 		"adjective": ["performing arts"],
@@ -527,13 +533,13 @@
 		"name": ["American history"],
 		"adjective": ["American history"],
 		"subject": ["colonialism", "manifest destiny", "capitalism", "the founding fathers", "washington", "democracy"],
-		"keyword": ["history", "washington", "america", "american", "columbia", "columbian", "united", "unite"],
+		"keyword": ["history", "washington", "america", "american", "columbia", "columbian", "settle", "colony", "coloni", "empire", "imperi", "unite"],
 		"source": ["declaration-of-independence.txt", "declaration-of-independence.txt", "declaration-of-independence.txt"]
 	}, {
 		"name": ["ancient history"],
 		"adjective": ["ancient history"],
-		"subject": ["Greece", "Rome", "China", "India", "Persia", "Egypt", "migration", "tribes", "antiquity", "the classics", "civilization", "empires"],
-		"keyword": ["history", "ancient", "antique", "antiquity", "classical", "bygone", "forgotten"]
+		"subject": ["Greece", "Rome", "China", "India", "Persia", "Egypt", "migration", "tribes", "antiquity", "the classics", "civilization", "empires", "peoples"],
+		"keyword": ["history", "ancient", "antique", "antiquity", "classical", "bygone", "forgotten", "ancestors", "forefathers", "peoples"]
 	}, {
 		"name": ["linguistics"],
 		"adjective": ["linguistic"],
@@ -593,22 +599,26 @@
 		"name": ["economics"],
 		"adjective": ["economic"],
 		"subject": ["markets", "efficiency", "the public sector", "growth", "policy", "supply", "demand", "capital"],
-		"keyword": ["economy", "economic", "money", "wealth", "coin", "coins", "riches"]
+		"keyword": ["economy", "economic", "money", "wealth", "coin", "coins", "riches"],
+        "sources": ["smith-wealth.txt", "smith-wealth.txt"]
 	}, {
 		"name": ["finance"],
 		"adjective": ["financial"],
 		"subject": ["investment", "asset", "liability", "risk", "profit", "capital"],
-		"keyword": ["finance", "credit", "wealth", "profit", "growth", "invest", "investment"]
+		"keyword": ["finance", "credit", "wealth", "profit", "growth", "invest", "investment"],
+        "sources": ["smith-wealth.txt", "smith-wealth.txt"]
 	}, {
 		"name": ["microeconomics"],
 		"adjective": ["microeconomic"],
 		"subject": ["supply", "demand", "equilibrium", "markets", "market failure", "efficiency", "competition", "monopoly"],
-		"keyword": ["money", "wealth", "coin", "compete", "competition", "survive", "demand", "supply", "demands"]
+		"keyword": ["money", "wealth", "coin", "compete", "competition", "survive", "demand", "supply", "demands"],
+        "sources": ["smith-wealth.txt", "smith-wealth.txt"]
 	}, {
 		"name": ["macroeconomics"],
 		"adjective": ["macroeconomic"],
 		"subject": ["models", "consumption", "inflation", "unemployment", "trade", "finance"],
-		"keyword": ["money", "wealth", "coin", "compete", "nations", "trade", "trading", "exchange", "exchanges"]
+		"keyword": ["money", "wealth", "coin", "compete", "nations", "trade", "trading", "exchange", "exchanges"],
+        "sources": ["smith-wealth.txt", "smith-wealth.txt"]
 	}, {
 		"name": ["law"],
 		"adjective": ["legal"],
@@ -670,8 +680,8 @@
 		"name": ["critical race theory"],
 		"adjective": ["critical race theory"],
 		"subject": ["power", "white supremacy", "oppression", "resistance", "community", "injustice"],
-		"keyword": ["race", "races", "injustice", "oppression", "oppress", "dominate", "dominance", "white", "black"],
-		"blacklist": ["savage", "lazy", "lazier", "laziest", "stupid", "wild"]
+		"keyword": ["injustice", "oppression", "oppress", "oppressed", "dominate", "dominance", "hierarchy"],
+		"blacklist": ["savage", "lazy", "lazier", "laziest", "stupid", "wild", "inferior", "superior", "master", "degenerate", "degeneration", "decay"]
 	}, {
 		"name": ["sociolinguistics"],
 		"adjective": ["sociolinguistic"],
@@ -686,18 +696,12 @@
 		"gerund": ["understanding", "communing with"],
 		"practice": ["understanding of", "communion with"],
 		"object": ["the divine", "God", "the spiritual self", "the spirit", "the soul", "divinity"],
-		"source": ["bible.txt"]
+		"source": ["bible.txt", "bhagavad-gita.txt"]
 	}, {
 		"name": ["astrology"],
 		"adjective": ["astrology"],
 		"subject": ["the zodiac", "charts", "the planets", "the stars", "energies"],
 		"keyword": ["star", "stars", "heavens", "heaven", "planet", "planets", "mars", "venus", "future"]
-	}, {
-		"name": ["witchcraft"],
-		"adjective": ["witchcraft"],
-		"subject": ["potions", "hexes", "curses", "familiars", "spirits", "Satan"],
-		"keyword": ["craft", "sabbath", "witch", "witches", "witchcraft", "curse"],
-		"source": ["malleus.txt"]
 	}],
 	"modifier_titles": [
 		"<excerpt>: <title:modifier_second>"
@@ -714,7 +718,8 @@
 		"subject": ["criticism", "society", "hierarchy"]
 	}, {
 		"adjective": ["feminist"],
-		"subject": ["women", "gender", "sex"]
+		"subject": ["women", "gender", "sex"],
+        "source": ["wollstonecraft-vindication.txt"]
 	}, {
 		"adjective": ["dialectical"],
 		"subject": ["argument", "reason", "debate", "logic"]
@@ -722,7 +727,8 @@
 		"adjective": ["modern", "contemporary"],
 		"subject": ["technology", "culture", "globalization"]
 	}, {
-		"adjective": ["ancient"]
+		"adjective": ["ancient"],
+        "source": ["bible.txt", "homer-odyssey.txt", "plato-republic.txt", "lucretius-nature.txt", "bhagavad-gita.txt"]
 	}, {
 		"adjective": ["forbidden"],
 		"subject": ["taboo", "law", "morality", "ethics"]
@@ -730,7 +736,7 @@
 		"adjective": ["biblical"],
 		"subject": ["God", "Jesus", "faith", "Christianity", "Satan", "The Second Coming"],
 		"title": ["<field:subject> in the <text:period> of <modifier:subject>", "Holy <field:subject>!"],
-		"source": ["bible.txt", "bible.txt", "bible.txt", "bible.txt", "bible.txt", "bible.txt", "bible.txt"]
+		"source": ["bible.txt"]
 	}, {
 		"adjective": ["speculative"],
 		"subject": ["technology", "parallel worlds", "the multiverse", "the future", "the singularity"]
@@ -740,14 +746,15 @@
 		"verb": ["make"],
 		"gerund": ["making"],
 		"practice": ["making"],
-		"object": ["money", "a profit"]
+		"object": ["money", "a profit"],
+        "source": ["smith-wealth.txt"]
 	}, {
 		"adjective": ["postmodern"],
 		"subject": ["subjectivity", "ideology", "narratives", "truth", "discourse", "pluralism", "irony", "relativism"]
 	}, {
 		"adjective": ["marxist", "revolutionary"],
 		"subject": ["Marx", "Lenin", "Mao", "the revolution", "the proletariat", "the bourgoisie", "class", "communism", "socialism", "the dialectic", "contradiction"],
-		"source": ["marx-critique.txt", "marx-critique.txt", "marx-critique.txt", "marx-critique.txt", "marx-critique.txt", "marx-critique.txt", "marx-critique.txt"]
+		"source": ["marx-critique.txt"]
 	}],
-	"source": ["bible.txt", "homer-odyssey.txt", "blake-poems.txt", "carroll-alice.txt", "darwin-origin.txt", "milton-paradise.txt", "plato-republic.txt", "shakespeare-hamlet.txt", "oxford-american-essays.txt", "declaration-of-independence.txt"]
+	"source": ["homer-odyssey.txt", "blake-poems.txt", "carroll-alice.txt", "darwin-origin.txt", "milton-paradise.txt", "plato-republic.txt", "shakespeare-hamlet.txt", "oxford-american-essays.txt", "declaration-of-independence.txt", "wollstonecraft-vindication.txt", "lucretius-nature.txt"]
 }

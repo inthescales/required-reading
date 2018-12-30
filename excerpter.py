@@ -30,7 +30,7 @@ def find(keywords, file):
     
     with open(file, 'r') as corpus:
         file_data = corpus.read()
-        file_data = file_data.decode("utf-8")
+        #file_data = file_data.decode("utf-8")
         file_data = prepare_data(file_data)
         
     words = file_data.split(" ")
@@ -113,7 +113,7 @@ def clean(initial_word, term):
             continue
             
         type = tags[i][0]
-        if is_last and ('CC' in type or 'IN' in type or 'DT' in type or 'PRP' in type or 'PRP$' in type or 'WDT' in type or 'WP$' in type or 'MD' in type or 'TO' in type or 'WRB' in type or 'VB' in type or 'VBZ' in type or 'VBP' in type or 'VBD' in type or 'RB' in type):
+        if is_last and ('CC' in type or 'IN' in type or 'DT' in type or 'PRP' in type or 'PRP$' in type or 'WDT' in type or 'WP$' in type or 'MD' in type or 'TO' in type or 'WRB' in type or 'VB' in type or 'VBZ' in type or 'VBP' in type or 'VBD' in type or 'RB' in type or 'WP' in type):
             term = term[:i]
             continue
             
@@ -128,11 +128,13 @@ def clean(initial_word, term):
     else:
         return None
 
-corpora = ['homer-odyssey.txt', 'bible.txt', 'blake-poems.txt', 'carroll-alice.txt', 'darwin-origin.txt', 'malleus.txt', 'marx-critique.txt', 'milton-paradise.txt', 'plato-republic.txt', 'shakespeare-hamlet.txt', 'declaration-of-independence.txt', 'oxford-american-essays.txt']
+corpora = ['homer-odyssey.txt', 'bible.txt', 'blake-poems.txt', 'carroll-alice.txt', 'darwin-origin.txt', 'malleus.txt', 'marx-critique.txt', 'milton-paradise.txt', 'plato-republic.txt', 'shakespeare-hamlet.txt', 'declaration-of-independence.txt', 'oxford-american-essays.txt', 'smith-wealth.txt', 'wollstonecraft-vindication.txt', 'lucretius-nature.txt', 'bhagavad-gita.txt']
+
+#corpora = []
 
 finds = {}
 for corpus in corpora:
-    print corpus
+    print(corpus)
     terms = find(keywords, 'corpus/' + corpus)
     finds[corpus] = terms
     file = open('excerpts/' + corpus, 'w')

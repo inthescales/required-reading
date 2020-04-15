@@ -1,5 +1,7 @@
+import codecs
 import json
 import re
+import os
 
 from pattern.en import tag
 
@@ -30,7 +32,7 @@ def generate_excerpts(data_root):
         file_data = None
         finds = {}
 
-        with open(file, 'r') as corpus:
+        with codecs.open(file, 'r', encoding='utf-8') as corpus:
             file_data = corpus.read()
             file_data = prepare_data(file_data)
 
@@ -40,7 +42,7 @@ def generate_excerpts(data_root):
 
             word = words[i].lower()
 
-            if word and word in keywords:
+            if word is not None and word in keywords:
 
                 if word not in finds:
                     finds[word] = []
@@ -130,6 +132,11 @@ def generate_excerpts(data_root):
 
     corpora = ['homer-odyssey.txt', 'bible.txt', 'blake-poems.txt', 'carroll-alice.txt', 'darwin-origin.txt', 'malleus.txt', 'marx-critique.txt', 'milton-paradise.txt', 'plato-republic.txt', 'shakespeare-hamlet.txt', 'declaration-of-independence.txt', 'oxford-american-essays.txt', 'smith-wealth.txt', 'wollstonecraft-vindication.txt', 'lucretius-nature.txt', 'bhagavad-gita.txt']
 
+    try:
+        os.makedirs(data_root + '/excerpts')
+    except OSError:
+        pass
+        
     finds = {}
     for corpus in corpora:
         print(corpus)

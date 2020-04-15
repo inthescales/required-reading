@@ -5,7 +5,7 @@ import sys
 sys.path.insert(1, './src')
 
 from bookgen import write_post
-#from excerpter import generate_excerpts
+from excerpter import generate_excerpts
 
 # Generating entries
 
@@ -68,8 +68,7 @@ if __name__ == '__main__' and len(sys.argv) > 0:
         count = 1
 
     if mode == "excerpt":
-        #generate_excerpts("data")
-        print("Excerpting disabled due to issues with pattern")
+        generate_excerpts("data")
     elif mode == "publish":
         botbuddy.post(generate_entry)
     elif mode == "test":

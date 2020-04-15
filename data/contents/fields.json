@@ -677,12 +677,6 @@
 		"subject": ["gender", "sex", "sexuality", "transgression", "reaction", "society", "identity"],
 		"keyword": ["gender", "sex", "man", "woman", "men", "women", "identity", "identities"]
 	}, {
-		"name": ["critical race theory"],
-		"adjective": ["critical race theory"],
-		"subject": ["power", "white supremacy", "oppression", "resistance", "community", "injustice"],
-		"keyword": ["injustice", "oppression", "oppress", "oppressed", "dominate", "dominance", "hierarchy"],
-		"blacklist": ["savage", "lazy", "lazier", "laziest", "stupid", "wild", "inferior", "superior", "master", "degenerate", "degeneration", "decay"]
-	}, {
 		"name": ["sociolinguistics"],
 		"adjective": ["sociolinguistic"],
 		"subject": ["pragmatics", "class", "identity", "geography", "sociolects", "language change"],

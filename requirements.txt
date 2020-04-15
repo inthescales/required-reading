@@ -1,0 +1,2 @@
+pattern
+git+git://github.com/inthescales/bot-buddy#egg=botbuddy

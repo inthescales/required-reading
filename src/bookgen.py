@@ -35,13 +35,14 @@ class Entry:
 
 class Generator:
 
-    def __init__(self):
+    def __init__(self, data_root_dir):
+        self.data_root_dir = data_root_dir
         self.data = {}
         self.excerpts = {}
 
     def read_data(self):
 
-        contents_path = './contents/'
+        contents_path = self.data_root_dir + '/contents/'
 
         with open(contents_path + 'titles.json') as data_file:
             self.data["title"] = json.load(data_file)
@@ -53,7 +54,7 @@ class Generator:
             self.data["text"] = json.load(data_file)
 
             path = '.'
-            excerpts_path = './excerpts/'
+            excerpts_path = self.data_root_dir + '/excerpts/'
             excerpt_files = [f for f in listdir(excerpts_path) if isfile(join(excerpts_path, f))]
 
         for file in excerpt_files:
@@ -130,7 +131,7 @@ class Generator:
         if "blacklist" in field:
             blacklist = field["blacklist"]
             titles = self.filter(titles, blacklist)
-    
+
         if titles:
             return random.choice(titles)
         else:
@@ -307,40 +308,18 @@ class Generator:
         while generated == None or failed:
             failed = False
             generated = self.get_entry()
-        
+
         return generated
 
-def validate_tweet(text):
+def write_post(data_root):
 
-    if len(text) <= 140:
-        return True
-    else:
-        return False
-
-def write_tweet():
-
-    generator = Generator()
+    generator = Generator(data_root)
     generator.read_data()
     valid = False
 
     while not valid:
         entry = generator.generate_entry()
         text = entry.compose()
-        valid = validate_tweet(text)
-        
-        if len(text) <= 140:
-            valid = True
+        valid = len(text) <= 280
 
     return text
-
-def test(num):
-
-    generator = Generator()
-    generator.read_data()
-
-    for i in range(0, num):
-        entry = generator.generate_entry()
-        text = entry.compose()
-        print(text)
-        print("")
-

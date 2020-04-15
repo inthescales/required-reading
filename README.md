@@ -1,9 +1,23 @@
 # Required Reading
 
-A twitter bot that generates textbook titles using excerpts from a larger corpus.
+Required Reading generates made-up textbook titles using excerpts from a corpus of text.
 
-## Components:
+It is also a bot on Twitter(@req_reading) and Mastodon(@botsin.space@requiredreading) that post these titles.
 
-* excerpter.py - searches the corpus to find usable excerpts matching keywords
-* bookgen.py - builds titles from the lists of fields and formats and available excerpts
-* bookbot.py - posts titles to twitter, using botbuddy
+## Usage
+
+Before Required Reading can generate titles, it must run its excerpting process on a corpus. A corpus can be prepared by placing any number of plaintext files in a directory at data/corpus, and then running in excerpting mode. This can be achieved by running reading.py with the flag --excerpt. This will create a new directory at data/excerpts, which it can then use to generate titles.
+
+To generate titles with Required Reading in the command line, run reading.py with the flag --test. This will generate one title and print it to the console.
+
+To generate more titles at once, use the flag '-c' followed by an integer value.
+
+## Requirements
+
+Due to dependencies, at present Required Reading can only be run with python 2.
+
+The project contains two requirements files. The packages in "requirements_excerpting.txt" are needed to process corpus data. Those in "requirements.txt" are required for it to function as a bot on social media.
+
+## Posting on social media
+
+Required Reading uses Bot Buddy for posting to its social media accounts. Bot Buddy does not currently exist in any package manager, but you can find the [source on Github](https://github.com/inthescales/bot-buddy).

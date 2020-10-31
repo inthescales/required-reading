@@ -39,6 +39,7 @@ class Generator:
         self.data_root_dir = data_root_dir
         self.data = {}
         self.excerpts = {}
+        self.failed = False
 
     def read_data(self):
 
@@ -286,7 +287,7 @@ class Generator:
             else:
                 print("Failed: invalid source or keyword")
                 print(field["excerpts"])
-                failed = True
+                self.failed = True
                 return ["ERROR"]
         
         cur = dict
@@ -305,8 +306,8 @@ class Generator:
     def generate_entry(self):
 
         generated = None
-        while generated == None or failed:
-            failed = False
+        while generated == None or self.failed:
+            self.failed = False
             generated = self.get_entry()
 
         return generated

@@ -2,7 +2,7 @@ import getopt
 
 import botbuddy
 import sys
-sys.path.insert(1, './src')
+sys.path.insert(1, './generator')
 
 from bookgen import write_post
 

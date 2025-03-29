@@ -3,3 +3,5 @@
 *.pyc
 corpus
 excerpts
+
+archive/data/raw/*

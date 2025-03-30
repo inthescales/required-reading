@@ -26,12 +26,19 @@ img.header {
 	margin: 16px;
 }
 
+.head-table {
+	margin: 16px;
+}
+
+.head-table td {
+	margin: 0;
+}
+
 img.avatar {
 	width: 140px;
 	height: 140px;
 	border-radius: 50%;
 	display: block;
-	margin: 32px auto;
 	border: 2px solid #e6c693;
 }
 
@@ -42,6 +49,7 @@ img.avatar {
 }
 
 .pinned {
+	margin: 32px 0;
 	padding: 1px 16px;
 	background-color: #fff5eb;
 	border: 2px solid #e6d0ac;

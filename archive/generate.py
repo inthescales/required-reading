@@ -69,4 +69,8 @@ with open("./templates/header.html", "r") as header,\
     f.write(content)
     f.close()
 
+print("> Copying files")
+
+shutil.copytree("./assets", "./output/assets")
+
 print("> Finished")

@@ -1,0 +1,34 @@
+body {
+	font-size: 20px;
+}
+
+.column {
+	margin: auto;
+	width: 800px;
+	padding: 16px;
+	border: 1px solid black;
+	background-color: lightgray;
+}
+
+.post {
+	margin: 16px 0;
+	padding: 8px;
+	background-color: white;
+	line-height: 140%;
+	border-radius: 12px;
+}
+
+.timestamp {
+	font-size: 16px;
+	margin: 8px 0 0;
+}
+
+.course {
+	font-weight: bold;
+	font-size: 19px;
+}
+
+.title {
+	font-style: italic;
+	font-size: 22px;
+}

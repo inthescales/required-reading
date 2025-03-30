@@ -34,7 +34,7 @@ with open("./templates/header.html", "r") as header,\
     posts_read = 0
 
     days_limit = None
-    posts_limit = 100
+    posts_limit = 1000
     finished = False
 
     content = header.read()

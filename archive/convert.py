@@ -1,3 +1,4 @@
+import datetime
 import json
 import os
 import re
@@ -45,6 +46,10 @@ with open("./data/raw/tweets.js", "r") as tweets_in,\
         if "timestamp" in new_tweet and "post" in new_tweet:
             tweets.append(new_tweet)
             new_tweet = {}
+
+    print("> Sorting")
+    tweets = sorted(tweets, key=lambda tweet: datetime.datetime.strptime(tweet["timestamp"], "%a %b %d %H:%M:%S %z %Y"))
+    tweets.reverse()
 
     # Write
     json.dump(tweets, tweets_out, ensure_ascii=False, indent=4)

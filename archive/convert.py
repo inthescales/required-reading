@@ -18,7 +18,6 @@ with open("./data/raw/tweets.js", "r") as tweets_in,\
         
         time_match = re.search('"created_at" : "(.*?)",', line)
         if time_match != None:
-            # timestamp = time.strptime(timestr.group(1), "%a %b %d %H:%M:%S %z %Y")
             new_tweet["timestamp"] = time_match.group(1)
 
             if counter != 0:

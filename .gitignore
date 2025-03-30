@@ -4,4 +4,5 @@
 corpus
 excerpts
 
-archive/data/raw/*
+archive/output
+archive/data/*

@@ -1,13 +1,18 @@
 body {
 	font-size: 20px;
-	background-color: #fff5eb;
+	background-color: #f7e8d5;
+	color: #3b0902;
 }
 
 .column {
 	margin: auto;
 	width: 800px;
-	background-color: #f7e8d5;
-	border: 1px solid black;
+	background-color: #fff5eb;
+	border: 1px solid #3b0902;
+}
+
+a {
+	color: #b5170e;
 }
 
 /* HEADER */
@@ -22,11 +27,12 @@ img.header {
 }
 
 img.avatar {
-	width: 100px;
-	height: 100px;
+	width: 140px;
+	height: 140px;
 	border-radius: 50%;
 	display: block;
-	margin: 16px auto;
+	margin: 32px auto;
+	border: 4px solid #e6c693;
 }
 
 .page-title {
@@ -37,14 +43,16 @@ img.avatar {
 
 .pinned {
 	padding: 1px 16px;
-	border-radius: 16px;
 	background-color: #fff5eb;
+	border: 2px solid #e6d0ac;
+	border-radius: 12px;
+	line-height: 140%;
 }
 
 /* POSTS */
 
 .post-column {
-	background-color: #d1bf9b;
+	background-color: #e6d0ac;
 	padding: 16px;
 	border-radius: 24px 24px 0 0;
 }

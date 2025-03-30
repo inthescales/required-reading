@@ -3,13 +3,23 @@ import os
 import shutil
 
 import datetime
-import time
+import locale
+
+locale.setlocale(locale.LC_TIME, "en_US")
 
 shutil.rmtree("./output/")
 os.mkdir("./output/")
 
-def htmlForPost(post):
-    return post["timestamp"] + "<br>" + post["post"]["course"] + "<br>" + post["post"]["title"] + "<br>" + post["post"]["price"] + "<br><br>"
+def get_time_string(datetime):
+    return datetime.strftime("%b %d %Y, %I:%M%p")
+
+def html_for_post(template, time_string, post):
+    html = template
+    html = html.replace("%TIMESTAMP%", time_string)
+    html = html.replace("%COURSE%", post["course"])
+    html = html.replace("%TITLE%", post["title"])
+    html = html.replace("%PRICE%", post["price"])
+    return html
 
 print("> Generating page")
 
@@ -17,6 +27,7 @@ content = ""
 
 with open("./templates/header.html", "r") as header,\
      open("./templates/footer.html", "r") as footer,\
+     open("./templates/post.html", "r") as post_template_in,\
      open("./data/cooked/tweets.json", "r") as file_in:
 
     start_time = None
@@ -27,11 +38,11 @@ with open("./templates/header.html", "r") as header,\
     finished = False
 
     content = header.read()
+    post_template = post_template_in.read()
 
     posts = json.loads(file_in.read())
     for post in posts:
         timestamp = datetime.datetime.strptime(post["timestamp"], "%a %b %d %H:%M:%S %z %Y")
-        # timestamp = datetime.fromtimestamp(post["timestamp"])
         if start_time == None:
             start_time = timestamp
         else:
@@ -41,7 +52,7 @@ with open("./templates/header.html", "r") as header,\
                 print("> Finishing after " + str(days_limit) + " days of posts")
 
         if not finished:
-            content += htmlForPost(post)
+            content += html_for_post(post_template, get_time_string(timestamp), post["post"])
             posts_read += 1
 
             if posts_limit != None and posts_read >= posts_limit:

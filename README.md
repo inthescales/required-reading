@@ -2,7 +2,9 @@
 
 Required Reading generates made-up textbook titles using excerpts from a corpus of texts.
 
-From 2016 to 2024 it ran as a bot on Twitter(@req_reading), and later on Mastodon(@botsin.space@requiredreading), posting these titles.
+From 2016 to 2024 it ran as a bot on [Twitter](https://www.twitter.com/req_reading), and later on [Mastodon](https://botsin.space/@requiredreading), posting these titles.
+
+A partial archive of these posts can be found [here](http://inthescales.com/pages/required-reading-archive/).
 
 ## Usage
 

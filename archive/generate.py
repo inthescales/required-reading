@@ -13,6 +13,11 @@ os.mkdir("./output/")
 def get_time_string(datetime):
     return datetime.strftime("%b %d %Y, %I:%M%p")
 
+def populate_header(template, quantity):
+    html = template
+    html = html.replace("%QUANTITY%", str(quantity))
+    return html
+
 def html_for_post(template, time_string, post):
     html = template
     html = html.replace("%TIMESTAMP%", time_string)
@@ -37,7 +42,7 @@ with open("./templates/header.html", "r") as header,\
     posts_limit = 1000
     finished = False
 
-    content = header.read()
+    content = populate_header(header.read(), posts_limit)
     post_template = post_template_in.read()
 
     posts = json.loads(file_in.read())

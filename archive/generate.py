@@ -54,7 +54,7 @@ with open("./templates/header.html", "r") as header,\
             difference = start_time - timestamp
             if days_limit != None and difference >= datetime.timedelta(days=days_limit):
                 finished = True
-                print("> Finishing after " + "{:,}".format(days_limit) + " days of posts")
+                print("> Finishing after " + str(days_limit) + " days of posts")
 
         if not finished:
             content += html_for_post(post_template, get_time_string(timestamp), post["post"])
@@ -62,7 +62,7 @@ with open("./templates/header.html", "r") as header,\
 
             if posts_limit != None and posts_read >= posts_limit:
                 finished = True
-                print("> Finishing after " + "{:,}".format(posts_limit) + " posts")
+                print("> Finishing after " + str(posts_limit) + " posts")
         else:
             break
 

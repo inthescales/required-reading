@@ -1,8 +1,8 @@
 # Required Reading
 
-Required Reading generates made-up textbook titles using excerpts from a corpus of text.
+Required Reading generates made-up textbook titles using excerpts from a corpus of texts.
 
-It is also a bot on Twitter(@req_reading) and Mastodon(@botsin.space@requiredreading) that post these titles.
+From 2016 to 2024 it ran as a bot on Twitter(@req_reading), and later on Mastodon(@botsin.space@requiredreading), posting these titles.
 
 ## Usage
 

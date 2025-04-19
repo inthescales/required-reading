@@ -27,7 +27,7 @@ img.header {
 }
 
 .head-table {
-	margin: 16px;
+	margin: 16px 32px;
 }
 
 .head-table td {
@@ -53,24 +53,25 @@ img.avatar {
 	padding: 1px 16px;
 	background-color: #fff5eb;
 	border: 2px solid #e6d0ac;
-	border-radius: 12px;
+	border-radius: 24px;
 	line-height: 140%;
 }
 
 /* POSTS */
 
 .post-column {
-	background-color: #e6d0ac;
-	padding: 16px;
+	padding: 0 16px 16px;
 	border-radius: 24px 24px 0 0;
 }
 
 .post {
 	margin: 16px 0;
-	padding: 8px 16px;
+	padding: 16px;
 	background-color: #fff5eb;
 	line-height: 140%;
-	border-radius: 12px;
+
+	border: 2px solid #e6d0ac;
+	border-radius: 24px;
 }
 
 .post:first-child {
@@ -82,8 +83,9 @@ img.avatar {
 }
 
 .timestamp {
+	margin: 16px 0 0;
 	font-size: 16px;
-	margin: 8px 0 0;
+	line-height: 100%;
 }
 
 .course {
